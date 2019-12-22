@@ -2,11 +2,8 @@
 
 (provide index)
 
-;TODO: Add lang lines.
-;TODO: Test code
-;TODO: Add in-between matter
-
-(require website-js (except-in 2htdp/image frame))
+(require website-js 
+	 (except-in 2htdp/image frame))
 
 (define (qa n q a)
   (enclose
@@ -43,9 +40,9 @@
 
   (div class: "p-4"
    @p{
-      Chapter 1 involves installing a programming language and meditates on the idea of printing "Hello, World".  As the following specifications reveal, the seemlingly limited languages shown in the book actually have surprisingly many secrets.    
+      Chapter 1 involves installing a programming language and meditates on the idea of printing "Hello, World".  As the following specifications reveal, the seemlingly limited languages shown in the book actually have many secrets.    
 
-      This allows the pairs below to use, in context, a breadth of computer science vocabulary related to arithemtic of numbers, strings, and images -- things that can be "printed" out in one of the hello world languages of Chapter 1.  You can consider this collection of pairs to be an immersion into the use of computer science language -- one in which you must (like a visitor to a foreign country) deduce and decode the meanings of things from their use in context.
+      You can consider the below collection to be an immersion into the use of computer science language.  Like a visitor to a foreign country, you can deduce and decode the meanings of things from their use in context.  
 
       @h4{Set 0}
 
@@ -288,11 +285,11 @@
 (define (chapter-2)
   (div class: "p-4"
    @p{
-      Chapter 2 introduces the concept of abstraction and relates it fundamentally to the idea of Story -- an abstraction of any sequence of ideas.  The pairs below continue the meditation: What is the breadth of things that, fundamentally, can be expressed as sequences of ideas.
+      Chapter 2 introduces the concept of abstraction and relates it fundamentally to the idea of Story.  The pairs below continue the meditation: What is the breadth of things that, fundamentally, can be expressed as sequences of ideas -- as Stories.
 
-      In coding, sequences are often called "lists".  One of the most historically significant programming languages of our time is the Lisp language -- an intellectual tradition that began in the 1950s and has been growing and evolving steadily since, influencing the design of all other programming languages. 
+      In coding, sequences are often called "lists".  One of the most historically significant programming languages is Lisp -- an intellectual tradition that began in the 1950s and has been growing and evolving steadily since, influencing the design of literally all other programming languages. 
 
-      The Lisp language's fundamental premise is that all codeable things can be written and thought of as sequences of things -- which may themeselves contain sequences of other things.  The pairs below uses both the arrow syntax introduced in the book, and the isomorphic Lisp syntax, with parentheses.  The reader is encouraged to see both as semantically equivalent yet syntactically different ways of meditating on the same idea space.
+      The Lisp language's fundamental premise is that all codeable ideas can be written as sequences of things -- which may themeselves contain sequences of other things.  The pairs below uses both the arrow syntax introduced in the book, and the parentesized Lisp syntax.  The reader is encouraged to see both as semantically equivalent yet syntactically different ways of meditating on the same idea space.
     
       @h4{Set 0}
 
@@ -573,9 +570,9 @@
    @p{
       The theme of Chapter 3 is nesting and frameing.  The pairs below are designed to show the breadth of things that can be expressed once you allow the dimension of depth to your code -- sequences of ideas, any of which can itself be a sequence of ideas; Stories whose Moments can be Stories. 
 
-      @p{Unlike the random assortment of demos in the last chapter.  This chapter's specification/implementation pairs will focus on the production of websites.  We'll use the best tools we have in this chapter -- but it won't be until the final chapter that we can make the code especially clear and flexible.}
+      @p{Unlike the random assortment of demos in the last chapter.  This chapter's specification/implementation pairs will focus on the production of websites.}
 
-      @p{We'll make a website devoted to the chess games of the 19th century: Between Napoleon and the Mechanical Turk.  You can feel free to use different images and make a website about whatever you want.  That creative act will teach you unimaginably more than simply following along with the Implementations below, as written.}
+      @p{In the spirit of Chapter 3, we'll make a website devoted to a historic chess game of the 19th century -- between Napoleon Bonepart and the Mechanical Turk.  However, you may feel free to use different images and make a website about whatever you want.  That creative act will teach you considerably more than wrotely following along with the Implementations below.}
 
 
    @h4{Set 1}
@@ -625,7 +622,7 @@
             })
 
   @(qa 4
-       @p{Add a few more moves. (Don't add all of them, though.  In chapter 4 we'll have linguistic tools to automate that process.  So if you add every move now, you'll be wasting your time.)}
+       @p{Add a few more moves. (Don't add all of them, though.  In Chapter 4, we'll have linguistic tools to automate that process.  So if you add every move now, you'll be wasting your time.)}
        @code-a{
             #lang dtc/frames/animations
 
@@ -1163,19 +1160,19 @@
   (div class: "p-4"
 
    @p{
-      Chapter 4 concludes the book by adding definitions, the power of naming things.  The keystone concept ushers in three cruicial cognitive tools:
+      Chapter 4 concludes the book by defining "definitions", the power of naming things.  
       
       @ul{
-        @li{The deep nesting structures introduced in Chatper 3 can now be flattened out, reducing cognitive load.}
-        @li{We can now leverage a fundamental human ability -- that of naming things, which is fundamentally equivalent to our ability to construct new language.  We now have the ability to construct new programming languages in in mutually beneficial ways while we construct new natural language.}
-	@li{Via recursion, Turing-Completeness is acheived. Less abstractly: We can now write programs that loop forever, or ones that loop as long as necessary to complete some task.}
+        @li{Now, the deep nesting structures introduced in Chatper 3 can now be flattened out, reducing cognitive load.}
+        @li{Now, we have a way to extend programming languages with new vocabulary words and grammatical constructs.}
+	@li{Now, via recursion, Turing-Completeness is acheived.  We can write programs that loop forever, or ones that loop as long as necessary to complete some task.}
 	}
 
-      The pairs below are meant to be considered in light of the Chapter 3's pairs.  Together, they demonstrate the use of two different coding styles to achieve the same task.  We hope readers, after wrestling with the texts long enough to understand the code written in both styles, will think critically about the advantages and disadvantages of each.
+      The text below is meant to be considered in light of the Chapter 3's text.  Together, the collection of implemented specifications demonstrates the use of two different coding styles to achieve the same task -- and how Specifications can just as easily be about editing and improving existing code as they can be about writing new code.  We hope readers, after wrestling with the texts long enough to understand the code written in both styles, will think critically about the advantages and disadvantages various styles confer to texts written in them. 
 
       @h4{Set 1}
 
-      @p{In this set, we will begin by refactoring the code from Chapter 3 -- using definitions.  We'll do so one step at a time -- each implementation will change how the @i{code} looks, tightening it and clarifying it, without ever changing the way the website looks.  The ability to refactor code is one worth practicing from the beginning of your coding journey.  It helps you gain fluency in the multitude of ways that coders can express the same ideas.  There's never "One Right Way" to implement something.}
+      @p{In this set, we will begin by refactoring the code from Chapter 3 -- using definitions.  We'll do so one step at a time -- each implementation will change how the @i{code} looks, tightening it and clarifying it, without ever changing the way the website looks.  The ability to refactor code is one worth practicing from the beginning of your coding journey.  It helps you your brain gain fluency over the multitude of ways that coders can express the same ideas.  Always remember: There's never "One Right Way" to implement something.}
 
 
       @(qa 1
@@ -2296,24 +2293,24 @@
 
     (h3 "Companion content")
 
-   @p{The following text is designed to help you level up your coding fluencies.  It goes well beyond the material in the four chapters of @i{Don't Teach Coding} and is designed to help you see how the abstract concepts of the book might be applied in more practical ways.   And, above all, they are designed to give you an opportunity to practice writing code -- the main activity that will shape your mind into a better and better coder over time.
+   @p{The following text is designed to help you level up your coding fluencies.  It does so by providing a context in which to practice writing code -- the one activity that, above all, will grow your brain into one that assists you in being a better and better coder over time. 
    
-   Note, these are not traditional problems that you might find in traditional textbooks.  Below, we give four recommendations for how you should approach this document (none of which is to approach the problems how you might approach the question/answer style of exercises).
+   @p{You @i{could} think of the following problems as questions and answers from traditional textbooks.  But we've labeled them "Specifications" and "Implementations" for a reason.  In softwere engineering, a "Specification" is something largely rendered in informal languages -- which a coder translates into an "Implementation" written largely in code.  Give ten coders one Specification and you'll get ten or more Implementations.  Thus, we recommend not thinking of these as questions paired with their One Right Answer.}}
 
-   @p{You @i{could} think of the following problems as questions and answers from traditional textbooks.  But we've labeled them "Specifications" and "Implementations" for a reason.  In softwere engineering, a "Specification" is something written (or spoken, or a little of both) largely rendered in natural language -- which a coder translates into an "Implementation" written largely in code.  Give ten coders one Specification and you'll get ten or more Implementations.  Thus, we recommend not thinking of these as questions paired with their One Right Answer.}}
+   Here are four recommendations for how you can use the texts below as a tool for upgrading your coding fluencies:
 
    @ol{
 
    @li{
-   @p{@b{Read English, Read Code} Or, you can reveal both the Specification and Implementation, reading both and trying to find the parallels.  That comparative linguistics approach can be useful -- but ultimately won't be as beneficial as the below two (more difficult) challenges.  Language students who fear making mistakes are often tempted to spend time solely on reading acties.  We encourage students to resist this temptation and begin writting as soon as possible though.}}
+   @p{@b{Read English, Read Code} Reveal both the Specification and Implementation, so you can read both.  Try to find the parallels, the mappings, the analogies, the translations.  This "comparative linguistics" approach can be useful -- but ultimately won't be as beneficial as the below (more difficult) activities.  We encourage students to begin writing coe as soon as possible.}}
 
-   @li{@p{@b{Read English, Write Code} One way you can use these learning resources is to hide the Implementation and attempt to write the Specification.  That exercise will increase your coding fluencies by helping you practice the act of translating from your native language to code.}}
-
-   @li{
-   @p{@b{Read Code, Write English} However, you can also hide the Specification and attempt to discern it from the Implementation.  That exercise will increase your coding fluencies by helping your practice the act of translation from code to your native language.}}
+   @li{@p{@b{Read English, Write Code} Hide the Implementation and attempt to write the Specification.  This exercise will helping you practice the cognitive processes involved in translating from a natural language to code.}}
 
    @li{
-   @p{@b{Write English, Write Code} Lastly, and perhaps most valuable of all, you can take the Implementations here as starting points for your own creative activities.  Take these Specifications and change them and adapt them for your own ends.  Then write your own Implementaiton.  Creative writing in another language simultaneously builds fluencies and reveals to you your own weaknesses.} }}
+   @p{@b{Read Code, Write English} Hide the Specification and attempt to discern it from the Implementation.  This exercise will help you practice the cognitive processes involved in translating from code to a natural language.}}
+
+   @li{
+   @p{@b{Write English, Write Code} Lastly, and perhaps most valuable of all, you can take what's here as starting points for your own creative activities.  Take the Implementations or the Specifications and change adapt them for your own ends.  Creative writing in another language simultaneously builds fluencies and reveals existing weaknesses.}}}
 
    (tabify 
      (active-tab-nav-link href: "#ch1" "Chapter 1")
