@@ -26,10 +26,14 @@
             a))))
    (script ())))
 
+(define lang (make-parameter "#lang racket"))
+
 (define (code-a . content)
   (pre
    (code class: "lang-scheme"
-     content)))
+	 (lang)
+	 "\n\n"
+	 content)))
 
 (define (chapter-1)
   (define (q . content)
@@ -37,12 +41,18 @@
      @p{For @tt{#lang hello/normal}, @tt{#lang hello/colors}, or @tt{#lang hello/animation}:}
      (div class: "ml-5" content)))
 
+  (parameterize ([lang ""])
+
 
   (div class: "p-4"
    @p{
-      Chapter 1 involves installing a programming language and meditates on the idea of printing "Hello, World".  As the following specifications reveal, the seemlingly limited languages shown in the book actually have many secrets.    
 
-      You can consider the below collection to be an immersion into the use of computer science language.  Like a visitor to a foreign country, you can deduce and decode the meanings of things from their use in context.  
+      Chapter 1 involves installing a programming language and meditates on the idea of printing "Hello, World".  As the following specifications reveal, the seemlingly limited languages shown in the book actually have many secrets.  Printing is seemingly "one thing."  But the number of programs that print something are infinite.
+
+      You can consider the below collection to be a brief excursion into that infinity -- for the purposes of immersion into the language and vocabulary of coding. Like a visitor to a foreign country, you should try to deduce and decode the meanings of things from their uses in context.  
+
+      @(hr)
+      
 
       @h4{Set 0}
 
@@ -85,7 +95,7 @@
            @code-a{(print (circle 10 "solid" "red"))})
 
       @(qa 2
-           @p{You can create a blue triangle with side-length 5 like this: @tt{(triangle 5 "solid" "blue")}. Try to print purple square with side-length 10.}
+           @p{You can create a blue triangle with side-length 5 like this: @tt{(triangle 5 "solid" "blue")}. Try to print purple square with side-length 15.}
            @code-a{(print (square 15 "solid" "purple")) })
 
       @(qa 3
@@ -95,7 +105,8 @@
       @(qa 4
            @div{
                 @p{The code @tt{(star-polygon 40 7 3 "outline" "darkred")} makes this:}
-                @p{@(write-img (star-polygon 40 7 3 "outline" "darkred"))}
+
+                @(write-img (star-polygon 40 7 3 "outline" "darkred"))
 
                 @p{Write code that makes this:}
                 @p{@(write-img (star-polygon 20 10 3 "solid" "cornflowerblue"))}}
@@ -126,7 +137,7 @@
            @code-a{(print (text "Hello and\nGoodbye" 24 "orange"))})
 
       @(qa 4
-           @p{@tt{print} an outlined magenta rombus.}
+           @p{@tt{print} an outlined magenta rhombus.}
            @code-a{(print (rhombus 40 45 "outline" "magenta")) })
 
       @(qa 5
@@ -280,19 +291,22 @@
                                                (square 40 "solid" "purple"))))))
                 })
 
-      }))
+      })))
 
 (define (chapter-2)
   (div class: "p-4"
-   @p{
-      Chapter 2 introduces the concept of abstraction and relates it fundamentally to the idea of Story.  The pairs below continue the meditation: What is the breadth of things that, fundamentally, can be expressed as sequences of ideas -- as Stories.
+   @p{Chapter 2 introduces the concept of abstraction and relates it fundamentally to the idea of Story.  The pairs below continue the meditation: What is the breadth of things that, fundamentally, can be expressed as sequences of ideas -- as Stories?}
 
-      In coding, sequences are often called "lists".  One of the most historically significant programming languages is Lisp -- an intellectual tradition that began in the 1950s and has been growing and evolving steadily since, influencing the design of literally all other programming languages. 
+    @p{In coding, sequences are often called "lists".  One of the most historically significant programming languages is Lisp -- an intellectual tradition that began in the 1950s and has been growing and evolving steadily since, influencing the design of literally all other programming languages. }
 
-      The Lisp language's fundamental premise is that all codeable ideas can be written as sequences of things -- which may themeselves contain sequences of other things.  The pairs below uses both the arrow syntax introduced in the book, and the parentesized Lisp syntax.  The reader is encouraged to see both as semantically equivalent yet syntactically different ways of meditating on the same idea space.
+     @p{The Lisp language's fundamental premise is that all codeable ideas can be written as sequences of things -- which may themselves contain sequences of other things.  The pairs below use both the arrow syntax introduced in the book and the parenthesized Lisp syntax.  The reader is encouraged to see both as semantically equivalent yet syntactically different ways of meditating on the same idea space.}
+
+     @(hr)
     
       @h4{Set 0}
 
+      @(parameterize ([lang "#lang dtc/story/cats"])
+	(list
       @(qa 1
            @p{Create a Story image that describes your life.  Put at least 3 major life Moments.}
            @code-a{born-houston-1987 -> moved-san-antonio-2006 -> moved-san-diego-2010})
@@ -302,7 +316,7 @@
            @code-a{tacos -> spaghetti -> pizza -> burgers -> sushi -> leftover-sushi -> icecream})
 
       @(qa 3
-           @p{Create a Story image that describes what things you do to get ready in the morning (start with get-up, end with leave-house)}
+           @p{Create a Story image that describes what things you do to get ready in the morning (start with get-up, end with leave-house).}
            @code-a{get-up -> brush-teeth -> take-shower -> make-coffee -> get-breakfast -> leave-house})
 
       @(qa 4
@@ -310,13 +324,13 @@
            @code-a{shake-hands -> hug -> mention-weather -> "How have you been?" -> catch-up-over-last-year})
 
       @(qa 5
-           @p{Create a Story image that describes what goes through your mind in the moments after someone cuts you off in traffic}
+           @p{Create a Story image that describes what goes through your mind in the moments after someone cuts you off in traffic.}
            @code-a{fear -> anger -> hate -> forgiveness})
 
       @h4{Set 1}
 
       @(qa 1
-           @p{Write a Story in which @tt{meta-cat} turns green and growns.}
+           @p{Write a Story in which @tt{meta-cat} turns green and grows.}
            @code-a{meta-cat -> greenify -> grow })
 
       @(qa 2
@@ -333,29 +347,29 @@
 
       @(qa 5
            @p{How many times can you grow a @tt{meta-cat} before it crashes your computer?}
-           @code-a{meta-cat -> grow -> grow -> grow -> grow -> grow -> grow -> grow})
+           @code-a{meta-cat -> grow -> grow -> grow -> grow -> grow -> grow -> grow})))
 
+      (parameterize ([lang "#lang dtc/story+/cats"])
+	(list
 
       @h4{Set 2}
 
       @(qa 1
            @p{Use @tt{website/bootstrap} to extend @tt{dtc/story+cats} so that you can launch a website with a few words of text.}
            @code-a{
-                #lang dtc/story+/cats
                 (require website/bootstrap)
                 (preview-page "This is a website")})
 
       @(qa 2
-           @p{Write a website with a header tag and a paragraph tag.}
+           @p{Write a website with an @tt{h1} tag and a paragraph tag.}
            @code-a{
-                #lang dtc/story+/cats
                 (require website/bootstrap)
                 (preview-page
                  (h1 "This is a website")
                  (p "And here is a paragraph"))})
 
       @(qa 3
-           @p{Write a website with a header tag, paragraph tag, and an image of a red circle.}
+           @p{Write a website with an @tt{h1} tag, paragraph tag, and an image of a red circle.}
            @code-a{
                 (require website/bootstrap)
                 (preview-page 
@@ -378,7 +392,7 @@
                     (register-sprite (star 40 "solid" "green"))))))
                 })
 
-      @(qa 4
+      @(qa 5
            @p{Make an animation in which a picture of a cat and a picture of a computer scientist both spin.}
            @code-a{
                 (require meta-engine)
@@ -392,7 +406,7 @@
                      (beside (meta-cat)
                              (dijkstra)))))))})
 
-      @(qa 5
+      @(qa 6
            @p{Make a 3d environment using @tt{3d-exploration}'s preset volcano world.}
            @code-a{
                 (require 3d-exploration)
@@ -428,8 +442,10 @@
 
 
       @(qa 2
-           @p{Make a survival game in which one of the foods you collect looks like Edsger Dijkstra}
+           @p{Make a survival game in which one of the foods you collect looks like Edsger Dijkstra.}
            @code-a{
+	        (require survival)
+
                 (define (my-food)
                   (basic-food
                    #:sprite (dijkstra)
@@ -453,6 +469,8 @@
       @(qa 3
            @p{Make a survival game in which you collect three foods that look like differently colored Edsger Dijkstras.}
            @code-a{
+	        (require survival)
+
                 (define (basic-cherry)
                   (basic-food
                    #:sprite (dijkstra redify)
@@ -563,25 +581,26 @@
                          (dijkstra blueify grow grow)
                          (dijkstra blueify grow grow grow))))))
                 })
-      } ))
+       ))))
 
 (define (chapter-3)
+  (parameterize ([lang "#lang dtc/frames/animations"])
   (div class: "p-4"
    @p{
-      The theme of Chapter 3 is nesting and frameing.  The pairs below are designed to show the breadth of things that can be expressed once you allow the dimension of depth to your code -- sequences of ideas, any of which can itself be a sequence of ideas; Stories whose Moments can be Stories. 
+      The theme of Chapter 3 is nesting.  The pairs below are designed to show the breadth of things that can be expressed once you add this new dimension to your code -- sequences of ideas, any of which can themselves be sequences of ideas; Stories whose Moments can be Stories.}
 
-      @p{Unlike the random assortment of demos in the last chapter.  This chapter's specification/implementation pairs will focus on the production of websites.}
+      @p{Unlike the random assortment of demos in the last chapter, this chapter's specification/implementation pairs will focus on the production of websites.}
 
-      @p{In the spirit of Chapter 3, we'll make a website devoted to a historic chess game of the 19th century -- between Napoleon Bonepart and the Mechanical Turk.  However, you may feel free to use different images and make a website about whatever you want.  That creative act will teach you considerably more than wrotely following along with the Implementations below.}
+      @p{In the spirit of Chapter 3, we'll make a website devoted to a historic chess game of the 19th century -- between Napoleon Boneparte and the Mechanical Turk.  However, you may feel free to use different images and make a website about whatever you want.  That creative act will teach you considerably more than rotely following along with the Implementations below.}
+
+      @(hr)
 
 
    @h4{Set 1}
 
    @(qa 1
-        @p{Make an underconstruction page that displays a move from the Napoleon/Turk game.}
+        @p{Make an "under construction" page that displays a move from the Napoleon/Turk game.}
         @code-a{
-             #lang dtc/frames/animations
-
              (require website/bootstrap)
 
              (preview-page
@@ -594,8 +613,6 @@
    @(qa 2
         @p{Put the content into a container, so that the margins look better.}
         @code-a{
-             #lang dtc/frames/animations
-
              (require website/bootstrap)
 
              (preview-page
@@ -608,8 +625,6 @@
   @(qa 3
        @p{Wrap the Napoleon/Turk image in a bootstrap card with a header that says which move is being displayed.}
        @code-a{
-            #lang dtc/frames/animations
-
             (require website/bootstrap)
 
             (preview-page
@@ -622,10 +637,8 @@
             })
 
   @(qa 4
-       @p{Add a few more moves. (Don't add all of them, though.  In Chapter 4, we'll have linguistic tools to automate that process.  So if you add every move now, you'll be wasting your time.)}
+       @p{Add a few more moves. (Don't add all of them, though.  In Chapter 4, we'll have linguistic tools to automate that process.  So if you add every move now, you'll be wasting your time. Also, remove the "under construction" text.)}
        @code-a{
-            #lang dtc/frames/animations
-
             (require website/bootstrap)
 
             (preview-page
@@ -648,6 +661,8 @@
   @(qa 5
        @p{Instead of bootstrap cards, let's try a carousel.  Make a carousel that can cycle between multiple moves in the game.}
        @code-a{
+            (require website/bootstrap)
+
             (preview-page
              (carousel class: "slide"
                        (carousel-inner
@@ -662,8 +677,10 @@
   @h4{Set 2}
 
   @(qa 1
-       @p{}
+       @p{Put a jumbotron at the top that clarifies the story the page is telling.}
        @code-a{
+            (require website/bootstrap)
+
             (preview-page
              (jumbotron 
               (h1 class: "display-4"
@@ -681,8 +698,10 @@
             })
 
   @(qa 2
-       @p{}
+       @p{Add a background image to the jumbotron and attribute where it came from if necessary.}
        @code-a{
+            (require website/bootstrap)
+
             (preview-page
              (jumbotron style: (properties 
                                 background-size: "cover"
@@ -705,49 +724,9 @@
             })
 
   @(qa 3
-       @p{Add a jumbotron at the top to clarify the page's intent.}
-       @code-a{
-            (preview-page
-             (jumbotron style: (properties 
-                                background-size: "cover"
-                                background-image: "https://upload.wikimedia.org/wikipedia/commons/2/27/Kempelen_chess1.jpg")
-                        (h1 class: "display-4"
-                            "The match of the 19th century")
-                        (p "Napoleon versus the Turk"))
-
-             (p "Image above (by English Wikipedia user Caraf) is of a reconstruction of the machine that bested Napoleon Boneparte.")
-
-
-             (carousel class: "slide"
-                       (carousel-inner
-                        (carousel-item class: "active"
-                                       (write-img class: "d-block w-100" (napoleon/turk 2)))
-                        (carousel-item class: "active"
-                                       (write-img class: "d-block w-100" (napoleon/turk 3)))
-                        (carousel-item class: "active"
-                                       (write-img class: "d-block w-100" (napoleon/turk 4)))))
-
-             (h2 "Here's how the game went...")
-
-             (card-deck
-              (card
-               (card-header "Move Two...")
-               (write-img
-                (napoleon/turk 2)))
-              (card
-               (card-header "Move Three...")
-               (write-img
-                (napoleon/turk 3)))
-              (card
-               (card-header "Move Four...")
-               (write-img
-                (napoleon/turk 4)))))
-            })
-
-
-  @(qa 4
        @p{After the carousel, add the cards back (from an earlier implementation) -- so the page will have a jumbotron, a carousel, and cards.}
        @code-a{
+            (require website/bootstrap)
 
             (preview-page
              (jumbotron style: (properties 
@@ -794,6 +773,7 @@
        @p{At the bottom of the page add another jumbotron, this one with an embedded video from Youtube that explains the historic game.
              You can cut-and-paste Youtube's embed code into @tt{html/inline} for now.  We can clean it up later.}
        @code-a{
+            (require website/bootstrap)
 
             (preview-page
              (jumbotron style: (properties 
@@ -843,6 +823,8 @@
   @(qa 2
        @p{Convert the HTML syntax to Lisp syntax that does the same thing.}
        @code-a{
+            (require website/bootstrap)
+
             (preview-page
              (jumbotron style: (properties 
                                 background-size: "cover"
@@ -892,9 +874,11 @@
 
             })
 
-  @(qa 2
+  @(qa 3
        @p{Start a new website.  Put pictures of several teachers you respect, followed by a picture of yourself.}
        @code-a{
+            (require website/bootstrap)
+
             (preview-page
              (write-img (dijkstra))
              (write-img (habermann))
@@ -902,13 +886,15 @@
              (write-img (griswold))
             })
 
-  @(qa 3
-       @p{Add a jumbotron to clarify that the intent of the page is to show gratitude for your teachers.}
+  @(qa 4
+       @p{Add a jumbotron to clarify that the intent of the page is to show gratitude for your teachers.  Also put your images inside bootstrap cards to make them start to look prettier.}
        @code-a{
+            (require website/bootstrap)
+
             (preview-page
              (jumbotron style: (properties 
                                 background-size: "cover"
-                                background-image: "https://upload.wikimedia.org/wikipedia/commons/2/27/Kempelen_chess1.jpg")
+                                background-image: "https://farm9.staticflickr.com/8741/17576182286_1c28051c8c_b.jpg")
                         (h1 class: "display-4"
                             "My Teachers Are Cooler Than Me")
                         (p "This is for them"))
@@ -926,13 +912,15 @@
               (write-img (griswold))))
             })
 
-  @(qa 4
+  @(qa 5
        @p{Wrap each picture in a card with a header that identifies who that person is.}
        @code-a{
+            (require website/bootstrap)
+
             (preview-page
              (jumbotron style: (properties 
                                 background-size: "cover"
-                                background-image: "https://upload.wikimedia.org/wikipedia/commons/2/27/Kempelen_chess1.jpg")
+                                background-image: "https://farm9.staticflickr.com/8741/17576182286_1c28051c8c_b.jpg")
                         (h1 class: "display-4"
                             "My Teachers Are Cooler Than Me")
                         (p "This is for them"))
@@ -960,10 +948,12 @@
   @(qa 1
        @p{Make each card image be the header image for that card.}
        @code-a{
+            (require website/bootstrap)
+
             (preview-page
              (jumbotron style: (properties 
                                 background-size: "cover"
-                                background-image: "https://upload.wikimedia.org/wikipedia/commons/2/27/Kempelen_chess1.jpg")
+                                background-image: "https://farm9.staticflickr.com/8741/17576182286_1c28051c8c_b.jpg")
                         (h1 class: "display-4"
                             "My Teachers Are Cooler Than Me")
                         (p "This is for them"))
@@ -992,10 +982,12 @@
   @(qa 2
        @p{Add a button to each card with the text "Learn More".}
        @code-a{
+            (require website/bootstrap)
+
             (preview-page
              (jumbotron style: (properties 
                                 background-size: "cover"
-                                background-image: "https://upload.wikimedia.org/wikipedia/commons/2/27/Kempelen_chess1.jpg")
+                                background-image: "https://farm9.staticflickr.com/8741/17576182286_1c28051c8c_b.jpg")
                         (h1 class: "display-4"
                             "My Teachers Are Cooler Than Me")
                         (p "This is for them"))
@@ -1028,10 +1020,12 @@
   @(qa 3
        @p{Make one of the buttons trigger the popup of a modal window with more information about the person shown in that card.}
        @code-a{
+            (require website/bootstrap)
+
             (preview-page
              (jumbotron style: (properties 
                                 background-size: "cover"
-                                background-image: "https://upload.wikimedia.org/wikipedia/commons/2/27/Kempelen_chess1.jpg")
+                                background-image: "https://farm9.staticflickr.com/8741/17576182286_1c28051c8c_b.jpg")
                         (h1 class: "display-4"
                             "My Teachers Are Cooler Than Me")
                         (p "This is for them"))
@@ -1044,7 +1038,7 @@
                                "Learn More")
                (modal id: "dijkstra-modal"
                       (p "According to Wikipedia:") 
-                      (p "Edsger Dijkstra was a Dutch systems scientist, programmer, software engineer, science essayist,[8] and pioneer in computing science.["))))
+                      (p "Edsger Dijkstra was a Dutch systems scientist, programmer, software engineer, science essayist, and pioneer in computing science."))))
 
              (card
               (write-img class: "card-img-top" (dijkstra))
@@ -1069,10 +1063,12 @@
   @(qa 4
        @p{Enhance the modal's layout by wrapping the content in @tt{modal-content} and @tt{modal-dialog}.}
        @code-a{
+            (require website/bootstrap)
+
             (preview-page
              (jumbotron style: (properties 
                                 background-size: "cover"
-                                background-image: "https://upload.wikimedia.org/wikipedia/commons/2/27/Kempelen_chess1.jpg")
+                                background-image: "https://farm9.staticflickr.com/8741/17576182286_1c28051c8c_b.jpg")
                         (h1 class: "display-4"
                             "My Teachers Are Cooler Than Me")
                         (p "This is for them"))
@@ -1087,7 +1083,7 @@
                       (modal-dialog
                        (modal-content
                         (p "According to Wikipedia:") 
-                        (p "Edsger Dijkstra was a Dutch systems scientist, programmer, software engineer, science essayist,[8] and pioneer in computing science.["))))))
+                        (p "Edsger Dijkstra was a Dutch systems scientist, programmer, software engineer, science essayist, and pioneer in computing science."))))))
 
              (card
               (write-img class: "card-img-top" (dijkstra))
@@ -1111,10 +1107,12 @@
   @(qa 5
        @p{Add a footer to the modal with a button that dismisses the modal.}
        @code-a{
+            (require website/bootstrap)
+
             (preview-page
              (jumbotron style: (properties 
                                 background-size: "cover"
-                                background-image: "https://upload.wikimedia.org/wikipedia/commons/2/27/Kempelen_chess1.jpg")
+                                background-image: "https://farm9.staticflickr.com/8741/17576182286_1c28051c8c_b.jpg")
                         (h1 class: "display-4"
                             "My Teachers Are Cooler Than Me")
                         (p "This is for them"))
@@ -1129,7 +1127,7 @@
                       (modal-dialog
                        (modal-content
                         (p "According to Wikipedia:") 
-                        (p "Edsger Dijkstra was a Dutch systems scientist, programmer, software engineer, science essayist,[8] and pioneer in computing science.["))
+                        (p "Edsger Dijkstra was a Dutch systems scientist, programmer, software engineer, science essayist, and pioneer in computing science."))
                        (modal-footer
                         (button-secondary data-dismiss: "modal"))))))
 
@@ -1154,30 +1152,37 @@
 
   @p{Optionally, if you wish, you can add modal popups to the rest of the cards.}
 
-  }))
+  )))
 
 (define (chapter-4)
+  (parameterize ([lang "#lang dtc/complete"])
   (div class: "p-4"
 
    @p{
-      Chapter 4 concludes the book by defining "definitions", the power of naming things.  
+      Chapter 4 concludes the book by defining "definitions", the power of naming things.  }
       
+   @p{
       @ul{
-        @li{Now, the deep nesting structures introduced in Chatper 3 can now be flattened out, reducing cognitive load.}
-        @li{Now, we have a way to extend programming languages with new vocabulary words and grammatical constructs.}
+        @li{Now, the deep nesting structures introduced in Chapter 3 can be flattened out, reducing cognitive load.}
+        @li{Now, we have a way to extend programming languages with new vocabulary words and grammatical constructs -- allowing them to be extensible cognitive tools.}
 	@li{Now, via recursion, Turing-Completeness is acheived.  We can write programs that loop forever, or ones that loop as long as necessary to complete some task.}
 	}
+    }
 
-      The text below is meant to be considered in light of the Chapter 3's text.  Together, the collection of implemented specifications demonstrates the use of two different coding styles to achieve the same task -- and how Specifications can just as easily be about editing and improving existing code as they can be about writing new code.  We hope readers, after wrestling with the texts long enough to understand the code written in both styles, will think critically about the advantages and disadvantages various styles confer to texts written in them. 
+      @p{The text below is meant to be considered in light of Chapter 3's text.  Together, the collection of implemented specifications demonstrates the use of two different coding styles to achieve the same task -- and how Specifications can just as easily be about editing and improving existing code as they can be about writing new code.  We hope readers, after wrestling with the texts long enough to understand the code written in both styles, will think critically about the advantages and disadvantages that various styles can confer to texts written in them. }
+
+      @(hr)
 
       @h4{Set 1}
 
-      @p{In this set, we will begin by refactoring the code from Chapter 3 -- using definitions.  We'll do so one step at a time -- each implementation will change how the @i{code} looks, tightening it and clarifying it, without ever changing the way the website looks.  The ability to refactor code is one worth practicing from the beginning of your coding journey.  It helps you your brain gain fluency over the multitude of ways that coders can express the same ideas.  Always remember: There's never "One Right Way" to implement something.}
+      @p{In this set, we will begin by refactoring the code from Chapter 3 -- using definitions.  We'll do so one step at a time -- each implementation will change how the @i{code} looks, tightening it and clarifying it, without ever changing the way the website looks.  The ability to refactor code is one worth practicing from the beginning of your coding journey.  It helps your brain gain fluency over the multitude of ways that coders can express the same ideas.  Always remember: There's never "One Right Way" to implement something.}
 
 
       @(qa 1
            @p{Refactor the jumbotron from the final chess website in Chapter 3 (see above) into a definition with the name @tt{main-jumbotron}}
            @code-a{
+                (require website/bootstrap)
+
                 (define (main-jumbotron)
                   (jumbotron style: (properties 
                                      background-size: "cover"
@@ -1230,8 +1235,10 @@
                 })
 
       @(qa 2
-           @p{Refactor the move carousel into its own definition called @tt{move-carousel}.}
+           @p{Refactor the carousel of chess moves into its own definition called @tt{move-carousel}.}
            @code-a{
+                (require website/bootstrap)
+
                 (define (main-jumbotron)
                   (list
                    (jumbotron style: (properties 
@@ -1289,6 +1296,8 @@
       @(qa 3
            @p{Refactor the cards that display moves into its own definition called @tt{move-cards}.}
            @code-a{
+                (require website/bootstrap)
+
                 (define (main-jumbotron)
                   (list
                    (jumbotron style: (properties 
@@ -1348,8 +1357,10 @@
                 })
 
       @(qa 4
-           @p{Refactor the youtube video jumbotron into its own definition called @tt{youtube}.}
+           @p{Refactor the YouTube video jumbotron into its own definition called @tt{youtube}.}
            @code-a{
+                (require website/bootstrap)
+
                 (define (main-jumbotron)
                   (list
                    (jumbotron style: (properties 
@@ -1415,6 +1426,8 @@
       @(qa 1
            @p{Refactor the carousel items from @tt{move-carousel} into a definition called @tt{move-carousel-item}.  It should take a parameter that it uses inside @tt{napoleon/turk} to pick which move to display.}
            @code-a{
+                (require website/bootstrap)
+
                 (define (main-jumbotron)
                   (list
                    (jumbotron style: (properties 
@@ -1477,6 +1490,8 @@
       @(qa 2
            @p{Instead of explicitly calling @tt{move-carousel-item} three times in @tt{move-carousel}, use @tt{map} and @tt{range} to call @tt{move-carousel-item} on each of the numbers from 1 to 10}
            @code-a{
+                (require website/bootstrap)
+
                 (define (main-jumbotron)
                   (list
                    (jumbotron style: (properties 
@@ -1538,6 +1553,8 @@
       @(qa 3
            @p{For each of the cards in @tt{move-cards}, refactor those in the same way as you did @tt{move-carousel-item} -- that is, make a new definition called @tt{move-card}, and use that one three times in @tt{move-cards}.}
            @code-a{
+                (require website/bootstrap)
+
                 (define (main-jumbotron)
                   (list
                    (jumbotron style: (properties 
@@ -1599,6 +1616,7 @@
       @(qa 4
            @p{Use @tt{map} and @tt{range} to call @tt{move-card} ten times in @tt{move-cards} instead of just three.}
            @code-a{
+                (require website/bootstrap)
 
                 (define (main-jumbotron)
                   (list
@@ -1656,8 +1674,10 @@
                 })
 
       @(qa 5
-           @p{Create a definition called @tt{youtube-video} that encapsulates the part of the @tt{youtube} jumbotron that displays a youtube video.  Use @tt{youtube-video} inside @tt{youtube}, and while you're at it, add a few more youtube videos to the jumbotron, now that it's easy. }
+           @p{Create a definition called @tt{youtube-video} that encapsulates the part of the @tt{youtube} jumbotron that displays a YouTube video.  Use @tt{youtube-video} inside @tt{youtube}, and while you're at it, add a few more YouTube videos to the jumbotron, now that it's easy. }
            @code-a{
+                (require website/bootstrap)
+
                 (define (main-jumbotron)
                   (list
                    (jumbotron style: (properties 
@@ -1722,8 +1742,10 @@
       @h4{Set 3}
 
       @(qa 1
-           @p{Now let's begin to make a second page for a different chess match and see if our code is flexible enough yet.  Duplicate the @tt{napoleon/turk-page} definition to make a new one called @tt{kasparov/deep-blue-page}, use @tt{preview-pages} to preview them both together as part of a two-page website.}
+           @p{Now let's begin to make a second page for a different chess match and see if our code is flexible enough yet.  Create a @tt{napoleon/turk-page} definition and duplicate it.  Call the duplicate @tt{kasparov/deep-blue-page}.  Use @tt{preview-pages} to preview them both together as part of a two-page website.}
            @code-a{
+                (require website/bootstrap)
+
                 (define (main-jumbotron)
                   (list
                    (jumbotron style: (properties 
@@ -1798,6 +1820,8 @@
       @(qa 2
            @p{Both pages have the same background image, which won't do.  Enhance the @tt{main-jumbotron} definition so that it can display a different background image on each page.}
            @code-a{
+                (require website/bootstrap)
+
                 ;Note from the implementor:
                 ;  I used a #:background-image keyword parameter here to illustrate another way of writing a definition.
                 ;  It wasn't mentioned in the book, but then again -- that's the point of the extra materials: to go beyond the book. 
@@ -1877,6 +1901,8 @@
       @(qa 3
            @p{Add additional flexibility to your @tt{main-jumbotron} so that the title, subtitle, and attribution text can all be specified differently on each page.}
            @code-a{
+                (require website/bootstrap)
+
                 (define (main-jumbotron #:background-image background-image
                                         #:title title
                                         #:subtitle subtitle
@@ -1962,6 +1988,7 @@
       @(qa 4
            @p{Now the main issue is simply that each page displays the moves from only one game.  Add flexibility to @tt{move-carousel}, @tt{move-carousel-item}, @tt{move-cards}, and @tt{move-card}.  Use the flexibility to display a different game's moves on each page.  (NOTE: @tt{kasparov/deep-blue} is the name of the vocabulary word that provides moves for the Kasparov game.)  Also, experiment to find out how many moves are in each game -- and display all of them.}
            @code-a{
+                (require website/bootstrap)
 
                 (define (main-jumbotron #:background-image background-image
                                         #:title title
@@ -2050,6 +2077,8 @@
       @(qa 5
            @p{Finally, make the @tt{youtube} definition more flexible -- so that different videos can be displayed on each page.}
            @code-a{
+                (require website/bootstrap)
+
                 (define (main-jumbotron #:background-image background-image
                                         #:title title
                                         #:subtitle subtitle
@@ -2099,6 +2128,8 @@
                    allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                    allowfullscreen: #t))
 
+                ;Note from the implementor:
+                ;  I used what's called a "rest" parameter here.  I'm naming it so that readers can look up the concept if they wish. 
                 (define (youtube . ids)
                   (jumbotron
                    (h1 class: "display-4" "Everyone is talking about it")
@@ -2138,15 +2169,15 @@
 
       @h4{Set 4}
 
-      In the Chapter 3 problem set, we created a website -- sort of an interactive essay about a historic chess match.  In the pairs above, we refactored that code so that the definitions were flexible enough to tell two different stories with the same framework: the Napoleon game and the Kasparov game.
+      @p{In the Chapter 3 problem set, we created a website -- sort of an interactive essay about a historic chess match.  In the pairs above, we refactored that code so that the definitions were flexible enough to tell two different stories with the same framework: the Napoleon game and the Kasparov game.}
 
-      Now, we'll create a small blog website from scratch, but using flexible definitions from the get-go.
+      @p{Now, we'll create a small blog website from scratch, but using flexible definitions from the get-go.}
 
       @(qa 1
            @p{Make a blog with one post.  Make a definition for @tt{post} that can be reused for many different posts.}
            @code-a{
-                ;Note from the implementor:
-                ;  I used what's called a "rest" parameter here.  I'm naming it so that readers can look up the concept if they wish. 
+                (require website/bootstrap)
+
                 (define (post title . content)
                   (list
                    (jumbotron
@@ -2169,6 +2200,8 @@
       @(qa 2
            @p{Add a second post, using @tt{post}, about how you made the first post.}
            @code-a{
+                (require website/bootstrap)
+
                 (define (post title . content)
                   (list
                    (jumbotron
@@ -2200,6 +2233,8 @@
       @(qa 3
            @p{Add a third post, using @tt{post} again.  Use this post to remind you about the code to make a bootstrap card.}
            @code-a{
+                (require website/bootstrap)
+
                 (define (post title . content)
                   (list
                    (jumbotron
@@ -2240,6 +2275,8 @@
       @(qa 4
            @p{Add another post, using @tt{post}.  Also, change how all of your posts look by changing the @tt{post} definition.}
            @code-a{
+                (require website/bootstrap)
+
                 (define (post title . content)
                   (card
                    (card-header
@@ -2282,27 +2319,27 @@
                  (my-code-blog))
                 })
 
-      }))
+      )))
 
 
 
 (define (site)
-  (container
+  (container class: "p-4"
     (h1 "Don't Teach Coding")
     (h2 "Until You Read This Book")
 
     (h3 "Companion content")
 
-   @p{The following text is designed to help you level up your coding fluencies.  It does so by providing a context in which to practice writing code -- the one activity that, above all, will grow your brain into one that assists you in being a better and better coder over time. 
+   @p{The following text is designed to help you level up your coding fluencies.  It does so by providing a context in which to practice writing code -- the one activity that, above all, will code your brain into the brain of a coder. }
    
-   @p{You @i{could} think of the following problems as questions and answers from traditional textbooks.  But we've labeled them "Specifications" and "Implementations" for a reason.  In softwere engineering, a "Specification" is something largely rendered in informal languages -- which a coder translates into an "Implementation" written largely in code.  Give ten coders one Specification and you'll get ten or more Implementations.  Thus, we recommend not thinking of these as questions paired with their One Right Answer.}}
+   @p{You @i{could} think of the following problems as questions and answers from traditional textbooks.  But we've labeled them "Specifications" and "Implementations" for a reason.  In softwere engineering, a "Specification" is something largely rendered in informal languages -- which a coder translates into an "Implementation" written largely in code.  Give ten coders one Specification and you'll get ten (or more!) Implementations.  Thus, we recommend not thinking of these as questions paired with their One Right Answer.}
 
-   Here are four recommendations for how you can use the texts below as a tool for upgrading your coding fluencies:
+   @p{Here are four recommendations for how you can use the texts below as a tool for upgrading your coding fluencies:}
 
    @ol{
 
    @li{
-   @p{@b{Read English, Read Code} Reveal both the Specification and Implementation, so you can read both.  Try to find the parallels, the mappings, the analogies, the translations.  This "comparative linguistics" approach can be useful -- but ultimately won't be as beneficial as the below (more difficult) activities.  We encourage students to begin writing coe as soon as possible.}}
+   @p{@b{Read English, Read Code} Reveal both the Specification and Implementation, so you can read both.  Try to find the parallels, the mappings, the analogies, the translations.  This "comparative linguistics" approach can be useful -- but ultimately won't be as beneficial as the below (more difficult) activities.  We encourage students to begin writing code as soon as possible.}}
 
    @li{@p{@b{Read English, Write Code} Hide the Implementation and attempt to write the Specification.  This exercise will helping you practice the cognitive processes involved in translating from a natural language to code.}}
 
@@ -2310,18 +2347,44 @@
    @p{@b{Read Code, Write English} Hide the Specification and attempt to discern it from the Implementation.  This exercise will help you practice the cognitive processes involved in translating from code to a natural language.}}
 
    @li{
-   @p{@b{Write English, Write Code} Lastly, and perhaps most valuable of all, you can take what's here as starting points for your own creative activities.  Take the Implementations or the Specifications and change adapt them for your own ends.  Creative writing in another language simultaneously builds fluencies and reveals existing weaknesses.}}}
+   @p{@b{Write English, Write Code} Lastly, and perhaps most valuable of all, you can take what's here as starting points for your own creative activities.  Take the Implementations or the Specifications and adapt them for your own ends.  Creative writing in another language simultaneously builds fluencies and reveals existing weaknesses.}}}
 
    (tabify 
      (active-tab-nav-link href: "#ch1" "Chapter 1")
      (tab-nav-link href: "#ch2" "Chapter 2")
      (tab-nav-link href: "#ch3" "Chapter 3")
      (tab-nav-link href: "#ch4" "Chapter 4")
+     (tab-nav-link href: "#discuss" "Discussion")
 
      (active-tab-pane id: "ch1" (chapter-1))
      (tab-pane id: "ch2" (chapter-2))
      (tab-pane id: "ch3" (chapter-3))
-     (tab-pane id: "ch4" (chapter-4)))))
+     (tab-pane id: "ch4" (chapter-4))
+
+
+     ;I tried embedding based on the official Discourse tutorial:
+     ;   https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963
+
+     ;Getting a mysterious error, though.  Maybe because SSL isn't set up???  Set that up and revisit.
+     ;Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('http://forum.dont-teach.com') does not match the recipient window's origin ('http://dont-teach.com')
+     ;
+     ; Actually, it seem to be working now...
+
+     (tab-pane id: "discuss"
+		   (div id: "discourse-comments")
+		   @script/inline{
+		   window.DiscourseEmbed = { discourseUrl: 'http://forum.dont-teach.com/',
+					     discourseEmbedUrl: 'http://dont-teach.com/coding/practice' };
+
+		   (function() {
+			       var d = document.createElement('script'); 
+			       d.type = 'text/javascript'; 
+			       d.async = true;
+			       d.src = window.DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+			       (document.getElementsByTagName('head')[0]).appendChild(d);
+			       })(); 
+		   })
+     )))
 
 (define (index)
   (content #:head (list
