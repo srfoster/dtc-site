@@ -2,6 +2,10 @@
 
 `racket companion-site.rkt`
 
-# run
+# run server as deamon
 
 `racket main.rkt`
+
+# Stop server
+
+`sudo ./stop.sh`

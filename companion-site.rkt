@@ -1,5 +1,4 @@
-#lang at-exp racket
-
+#lang at-exp racket 
 (provide index)
 
 (require website-js 
@@ -41,7 +40,7 @@
      @p{For @tt{#lang hello/normal}, @tt{#lang hello/colors}, or @tt{#lang hello/animation}:}
      (div class: "ml-5" content)))
 
-  (parameterize ([lang ""])
+  (parameterize ([lang "#lang hello/colors"])
 
 
   (div class: "p-4"
