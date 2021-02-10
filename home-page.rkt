@@ -12,7 +12,10 @@
                class: "navbar-brand"
                "Don't Teach Coding")
             (ul class: "navbar-nav ml-auto"
-                (li class: "nav-item p-1"
+                (li class: "nav-item pl-4"
+		    (a href: "https://www.amazon.com/gp/product/1119602629/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1119602629&linkCode=as2&tag=th0a57-20&linkId=d9c2dbd6dd38ea111b2a59dda7f04ed2"
+		       "Purchase"))  
+                (li class: "nav-item pl-4"
 		    (a href: "/forums"
 		       "Forums"))))
 	   (container class: "p-5"
@@ -21,10 +24,11 @@
 	     (enclose
 	       (row 
 		 (col
-		   (img 
-		     width: "100%"
-		     style: (properties border: "1px solid lightgray")
-		     src: "/book-cover.png"))
+		   (a href: "https://www.amazon.com/gp/product/1119602629/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1119602629&linkCode=as2&tag=th0a57-20&linkId=d9c2dbd6dd38ea111b2a59dda7f04ed2" 
+                      (img 
+                                 width: "100%"
+                                 style: (properties border: "1px solid lightgray")
+                                 src: "/book-cover.png")))
 
 		 (col
 		   (div style: (properties text-align: "right")

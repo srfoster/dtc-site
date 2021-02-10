@@ -1,5 +1,7 @@
 #lang racket
 
+(provide server)
+
 (require web-server/servlet
          web-server/servlet-env
          web-server/formlets

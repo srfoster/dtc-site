@@ -1,1 +1,0 @@
-("6.11" ("587299d53ea2719676219b7cf48d0681052ae338" . "72510d292c87049c7762d90842c84ced47b2b68c") (collects #"2htdp" #"image.rkt") (collects #"at-exp" #"lang" #"reader.rkt") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt") (collects #"website-js" #"main.rkt"))
