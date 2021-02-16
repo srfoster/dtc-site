@@ -1,4 +1,12 @@
-<html><head><link rel="stylesheet" type="text/css" href="https:/cdn.jsdelivr.net/gh/PrismJS/prism@1.17.1/themes/prism.css" /><script src="https:/cdn.jsdelivr.net/npm/prismjs@1.17.1/prism.min.js"></script><script src="https:/cdn.jsdelivr.net/gh/PrismJS/prism@1.17.1/plugins/autoloader/prism-autoloader.min.js"></script><link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" /><meta charset="utf-8" /></head><body><script src="/js/jquery-3.4.1.min.js"></script><script src="/js/moment.min.js"></script><div class="container p-4" class="p-4"><h1>Don't Teach Coding</h1><h2>Until You Read This Book</h2><h3>Companion content</h3><p>The following text is designed to help you level up your coding fluencies.  It does so by providing a context in which to practice writing code -- the one activity that, above all, will code your brain into the brain of a coder. </p><p>You <i>could</i> think of the following problems as questions and answers from traditional textbooks.  But we've labeled them &quot;Specifications&quot; and &quot;Implementations&quot; for a reason.  In softwere engineering, a &quot;Specification&quot; is something largely rendered in informal languages -- which a coder translates into an &quot;Implementation&quot; written largely in code.  Give ten coders one Specification and you'll get ten (or more!) Implementations.  Thus, we recommend not thinking of these as questions paired with their One Right Answer.</p><p>Here are four recommendations for how you can use the texts below as a tool for upgrading your coding fluencies:</p><ol>
+<!DOCTYPE html>
+<html><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><script>
+//<![CDATA[
+function preloadSupported() {
+  var relList = document.createElement('link').relList;
+  return !!(relList && relList.supports && relList.supports('preload'));
+}
+//]]>
+</script><script async="" src="/js/modernizr-custom.js"></script><link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" /><link rel="stylesheet" type="text/css" href="/css/fontawesome.min.css" /><link rel="stylesheet" type="text/css" href="/css/fontawesome-brands.min.css" /><link rel="stylesheet" type="text/css" href="/css/fontawesome-solid.min.css" /><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/PrismJS/prism@1.17.1/themes/prism.css" /><script src="https://cdn.jsdelivr.net/npm/prismjs@1.17.1/prism.min.js"></script><script src="https://cdn.jsdelivr.net/gh/PrismJS/prism@1.17.1/plugins/autoloader/prism-autoloader.min.js"></script></head><body><script src="/js/jquery-3.4.1.min.js"></script><script async="" src="/js/moment.min.js"></script><div class="container p-4" class="p-4"><h1>Don't Teach Coding</h1><h2>Until You Read This Book</h2><h3>Companion content</h3><p>The following text is designed to help you level up your coding fluencies.  It does so by providing a context in which to practice writing code -- the one activity that, above all, will code your brain into the brain of a coder. </p><p>You <i>could</i> think of the following problems as questions and answers from traditional textbooks.  But we've labeled them &quot;Specifications&quot; and &quot;Implementations&quot; for a reason.  In softwere engineering, a &quot;Specification&quot; is something largely rendered in informal languages -- which a coder translates into an &quot;Implementation&quot; written largely in code.  Give ten coders one Specification and you'll get ten (or more!) Implementations.  Thus, we recommend not thinking of these as questions paired with their One Right Answer.</p><p>Here are four recommendations for how you can use the texts below as a tool for upgrading your coding fluencies:</p><ol>
 <li><p><b>Read English, Read Code</b> Reveal both the Specification and Implementation, so you can read both.  Try to find the parallels, the mappings, the analogies, the translations.  This &quot;comparative linguistics&quot; approach can be useful -- but ultimately won't be as beneficial as the below (more difficult) activities.  We encourage students to begin writing code as soon as possible.</p></li>
 
 <li><p><b>Read English, Write Code</b> Hide the Implementation and attempt to write the Specification.  This exercise will helping you practice the cognitive processes involved in translating from a natural language to code.</p></li>
@@ -15,7 +23,7 @@ You can consider the below collection to be a brief excursion into that infinity
 
 <h4>Set 0</h4>
 
-<div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns30_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns30_specification-content"><p class="card-text"><p>For <tt>#lang hello/normal</tt>, <tt>#lang hello/colors</tt>, or <tt>#lang hello/animation</tt>:</p><div class="ml-5"><tt>print</tt> words other than &quot;Hello, World!&quot;</div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns30_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns30_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns209"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns209_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns209_specification-content"><p class="card-text"><p>For <tt>#lang hello/normal</tt>, <tt>#lang hello/colors</tt>, or <tt>#lang hello/animation</tt>:</p><div class="ml-5"><tt>print</tt> words other than &quot;Hello, World!&quot;</div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns209_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns209_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print &quot;Something else&quot;)</code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -23,7 +31,7 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns31_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns31_specification-content"><p class="card-text"><p>For <tt>#lang hello/normal</tt>, <tt>#lang hello/colors</tt>, or <tt>#lang hello/animation</tt>:</p><div class="ml-5"><tt>print</tt> the result of two plus two.</div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns31_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns31_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns210"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns210_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns210_specification-content"><p class="card-text"><p>For <tt>#lang hello/normal</tt>, <tt>#lang hello/colors</tt>, or <tt>#lang hello/animation</tt>:</p><div class="ml-5"><tt>print</tt> the result of two plus two.</div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns210_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns210_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (+ 2 2))</code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -31,7 +39,7 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns32_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns32_specification-content"><p class="card-text"><p>For <tt>#lang hello/normal</tt>, <tt>#lang hello/colors</tt>, or <tt>#lang hello/animation</tt>:</p><div class="ml-5"><tt>print</tt> the result of five times five plus two.</div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns32_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns32_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns211"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns211_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns211_specification-content"><p class="card-text"><p>For <tt>#lang hello/normal</tt>, <tt>#lang hello/colors</tt>, or <tt>#lang hello/animation</tt>:</p><div class="ml-5"><tt>print</tt> the result of five times five plus two.</div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns211_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns211_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (+ 2 (* 5 5)))</code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -39,7 +47,7 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns33_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns33_specification-content"><p class="card-text"><p>For <tt>#lang hello/normal</tt>, <tt>#lang hello/colors</tt>, or <tt>#lang hello/animation</tt>:</p><div class="ml-5"><tt>print</tt> the result of multiplying four numbers of your choice and subtracting that from 100.</div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns33_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns33_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns212"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns212_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns212_specification-content"><p class="card-text"><p>For <tt>#lang hello/normal</tt>, <tt>#lang hello/colors</tt>, or <tt>#lang hello/animation</tt>:</p><div class="ml-5"><tt>print</tt> the result of multiplying four numbers of your choice and subtracting that from 100.</div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns212_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns212_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (- 100 (* 5000 48848 2 34)))</code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -47,7 +55,7 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns34_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns34_specification-content"><p class="card-text"><p>For <tt>#lang hello/normal</tt>, <tt>#lang hello/colors</tt>, or <tt>#lang hello/animation</tt>:</p><div class="ml-5"><tt>print</tt> the opposite of false.</div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns34_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns34_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns213"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns213_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns213_specification-content"><p class="card-text"><p>For <tt>#lang hello/normal</tt>, <tt>#lang hello/colors</tt>, or <tt>#lang hello/animation</tt>:</p><div class="ml-5"><tt>print</tt> the opposite of false.</div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns213_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns213_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (not #f))</code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -55,7 +63,7 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 6</h5><div class="card"><div class="card-header" onClick="$(' #ns35_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns35_specification-content"><p class="card-text"><p>For <tt>#lang hello/normal</tt>, <tt>#lang hello/colors</tt>, or <tt>#lang hello/animation</tt>:</p><div class="ml-5"><tt>print</tt> the opposite of true.</div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns35_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns35_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns214"><h5>Pair 6</h5><div class="card"><div class="card-header" onClick="$(' #ns214_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns214_specification-content"><p class="card-text"><p>For <tt>#lang hello/normal</tt>, <tt>#lang hello/colors</tt>, or <tt>#lang hello/animation</tt>:</p><div class="ml-5"><tt>print</tt> the opposite of true.</div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns214_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns214_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (not #t))</code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -63,7 +71,7 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 7</h5><div class="card"><div class="card-header" onClick="$(' #ns36_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns36_specification-content"><p class="card-text"><p>For <tt>#lang hello/normal</tt>, <tt>#lang hello/colors</tt>, or <tt>#lang hello/animation</tt>:</p><div class="ml-5"><tt>print</tt> the result of calling <tt>and</tt> on false and true.</div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns36_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns36_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns215"><h5>Pair 7</h5><div class="card"><div class="card-header" onClick="$(' #ns215_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns215_specification-content"><p class="card-text"><p>For <tt>#lang hello/normal</tt>, <tt>#lang hello/colors</tt>, or <tt>#lang hello/animation</tt>:</p><div class="ml-5"><tt>print</tt> the result of calling <tt>and</tt> on false and true.</div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns215_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns215_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (and #f #t))</code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -71,7 +79,7 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 8</h5><div class="card"><div class="card-header" onClick="$(' #ns37_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns37_specification-content"><p class="card-text"><p>For <tt>#lang hello/normal</tt>, <tt>#lang hello/colors</tt>, or <tt>#lang hello/animation</tt>:</p><div class="ml-5"><tt>print</tt> the result of calling <tt>or</tt> on false, false, false and true.</div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns37_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns37_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns216"><h5>Pair 8</h5><div class="card"><div class="card-header" onClick="$(' #ns216_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns216_specification-content"><p class="card-text"><p>For <tt>#lang hello/normal</tt>, <tt>#lang hello/colors</tt>, or <tt>#lang hello/animation</tt>:</p><div class="ml-5"><tt>print</tt> the result of calling <tt>or</tt> on false, false, false and true.</div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns216_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns216_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (or #f #f #f #t))</code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -81,7 +89,7 @@ You can consider the below collection to be a brief excursion into that infinity
 
 <h4>Set 1</h4>
 
-<div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns38_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns38_specification-content"><p class="card-text"><p>You can create a green circle with radius 5 like this: <tt>(circle 5 &quot;solid&quot; &quot;green&quot;)</tt>. Try to print red circle with radius 10.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns38_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns38_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns217"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns217_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns217_specification-content"><p class="card-text"><p>You can create a green circle with radius 5 like this: <tt>(circle 5 &quot;solid&quot; &quot;green&quot;)</tt>. Try to print red circle with radius 10.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns217_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns217_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (circle 10 &quot;solid&quot; &quot;red&quot;))</code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -89,7 +97,7 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns39_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns39_specification-content"><p class="card-text"><p>You can create a blue triangle with side-length 5 like this: <tt>(triangle 5 &quot;solid&quot; &quot;blue&quot;)</tt>. Try to print purple square with side-length 15.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns39_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns39_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns218"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns218_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns218_specification-content"><p class="card-text"><p>You can create a blue triangle with side-length 5 like this: <tt>(triangle 5 &quot;solid&quot; &quot;blue&quot;)</tt>. Try to print purple square with side-length 15.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns218_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns218_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (square 15 &quot;solid&quot; &quot;purple&quot;)) </code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -97,7 +105,7 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns40_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns40_specification-content"><p class="card-text"><p>You can create a green triangle with side-length 10 like this: <tt>(triangle 10 &quot;solid&quot; &quot;blue&quot;)</tt>. Try to print a yellow star with side-length 10.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns40_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns40_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns219"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns219_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns219_specification-content"><p class="card-text"><p>You can create a green triangle with side-length 10 like this: <tt>(triangle 10 &quot;solid&quot; &quot;blue&quot;)</tt>. Try to print a yellow star with side-length 10.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns219_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns219_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (star 10 &quot;solid&quot; &quot;yellow&quot;)) </code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -105,12 +113,12 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns41_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns41_specification-content"><p class="card-text"><div><p>The code <tt>(star-polygon 40 7 3 &quot;outline&quot; &quot;darkred&quot;)</tt> makes this:</p>
+<div class="pb-4" data-ns="ns220"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns220_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns220_specification-content"><p class="card-text"><div><p>The code <tt>(star-polygon 40 7 3 &quot;outline&quot; &quot;darkred&quot;)</tt> makes this:</p>
 
 <img src="/1.svg" />
 
 <p>Write code that makes this:</p>
-<p><img src="/2.svg" /></p></div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns41_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns41_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<p><img src="/2.svg" /></p></div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns220_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns220_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (star-polygon 20 10 3 &quot;solid&quot; &quot;cornflowerblue&quot;))</code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -118,8 +126,8 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns42_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns42_specification-content"><p class="card-text"><div><p>Use <tt>radial-star</tt> to <tt>print</tt> this:</p>
-<p><img src="/3.svg" /></p></div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns42_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns42_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns221"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns221_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns221_specification-content"><p class="card-text"><div><p>Use <tt>radial-star</tt> to <tt>print</tt> this:</p>
+<p><img src="/3.svg" /></p></div></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns221_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns221_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (radial-star 8 8 64 &quot;solid&quot; &quot;darkslategray&quot;))</code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -129,8 +137,8 @@ You can consider the below collection to be a brief excursion into that infinity
 
 <h4>Set 2</h4>
 
-<div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns43_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns43_specification-content"><p class="card-text"><p>Use <tt>regular-polygon</tt> to <tt>print</tt> this:
-         <img src="/4.svg" /></p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns43_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns43_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns222"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns222_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns222_specification-content"><p class="card-text"><p>Use <tt>regular-polygon</tt> to <tt>print</tt> this:
+         <img src="/4.svg" /></p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns222_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns222_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (regular-polygon 21 8 &quot;solid&quot; &quot;green&quot;))</code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -138,8 +146,8 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns44_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns44_specification-content"><p class="card-text"><p>Use <tt>text</tt> to <tt>print</tt> this:
-    <img src="/5.svg" /></p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns44_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns44_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns223"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns223_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns223_specification-content"><p class="card-text"><p>Use <tt>text</tt> to <tt>print</tt> this:
+    <img src="/5.svg" /></p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns223_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns223_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (text &quot;Hello&quot; 24 &quot;olive&quot;))</code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -147,7 +155,7 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns45_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns45_specification-content"><p class="card-text"><p>Add more to the message in the previous specification.  Change the color.  And add a newline character.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns45_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns45_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns224"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns224_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns224_specification-content"><p class="card-text"><p>Add more to the message in the previous specification.  Change the color.  And add a newline character.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns224_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns224_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (text &quot;Hello and\nGoodbye&quot; 24 &quot;orange&quot;))</code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -155,7 +163,7 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns46_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns46_specification-content"><p class="card-text"><p><tt>print</tt> an outlined magenta rombus.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns46_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns46_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns225"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns225_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns225_specification-content"><p class="card-text"><p><tt>print</tt> an outlined magenta rhombus.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns225_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns225_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (rhombus 40 45 &quot;outline&quot; &quot;magenta&quot;)) </code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -163,7 +171,7 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns47_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns47_specification-content"><p class="card-text"><p><tt>print</tt> a solid, yellowish green ellipse.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns47_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns47_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns226"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns226_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns226_specification-content"><p class="card-text"><p><tt>print</tt> a solid, yellowish green ellipse.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns226_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns226_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (ellipse 70 20 &quot;solid&quot; &quot;yellowgreen&quot;)) </code></pre></p></div></div></div><script>
 //<![CDATA[
@@ -173,8 +181,8 @@ You can consider the below collection to be a brief excursion into that infinity
 
 <h4>Set 3</h4>
 
-<div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns48_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns48_specification-content"><p class="card-text"><p>Use <tt>overlay</tt> to help <tt>print</tt> several ellipses atop each other:
-    <div><img src="/6.svg" /></div></p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns48_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns48_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns227"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns227_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns227_specification-content"><p class="card-text"><p>Use <tt>overlay</tt> to help <tt>print</tt> several ellipses atop each other:
+    <div><img src="/6.svg" /></div></p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns227_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns227_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (overlay (ellipse 10 10 &quot;solid&quot; &quot;green&quot;)
                 (ellipse 20 20 &quot;solid&quot; &quot;black&quot;)
@@ -187,8 +195,8 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns49_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns49_specification-content"><p class="card-text"><p>Another way to make colors is <tt>(make-color 255 0 0 40)</tt>.  Use that and <tt>overlay</tt> to help you <tt>print</tt> something like this:
-<div><img src="/7.svg" /></div></p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns49_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns49_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns228"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns228_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns228_specification-content"><p class="card-text"><p>Another way to make colors is <tt>(make-color 255 0 0 40)</tt>.  Use that and <tt>overlay</tt> to help you <tt>print</tt> something like this:
+<div><img src="/7.svg" /></div></p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns228_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns228_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (overlay (ellipse 10 60 &quot;solid&quot; (make-color 255 0 0 40))
                 (ellipse 20 50 &quot;solid&quot; (make-color 255 0 0 40))
@@ -202,8 +210,8 @@ You can consider the below collection to be a brief excursion into that infinity
 </script>
 
 
-<div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns50_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns50_specification-content"><p class="card-text"><p>Change the above program to use <tt>above</tt> instead of <tt>overlay</tt> and <tt>print</tt>:
-       <div><img src="/8.svg" /></div></p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns50_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns50_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns229"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns229_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns229_specification-content"><p class="card-text"><p>Change the above program to use <tt>above</tt> instead of <tt>overlay</tt> and <tt>print</tt>:
+       <div><img src="/8.svg" /></div></p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns229_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns229_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (above (ellipse 10 60 &quot;solid&quot; (make-color 255 0 0 40))
               (ellipse 20 50 &quot;solid&quot; (make-color 255 0 0 40))
@@ -216,7 +224,7 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns51_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns51_specification-content"><p class="card-text"><p>Instead of <tt>ellipse</tt>, try <tt>rectangle</tt> in one of the last two specifications.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns51_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns51_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns230"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns230_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns230_specification-content"><p class="card-text"><p>Instead of <tt>ellipse</tt>, try <tt>rectangle</tt> in one of the last two specifications.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns230_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns230_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (overlay (rectangle 10 60 &quot;solid&quot; (make-color 0 255 0 40))
                 (rectangle 20 50 &quot;solid&quot; (make-color 0 255 0 40))
@@ -232,7 +240,7 @@ You can consider the below collection to be a brief excursion into that infinity
 
 <h4>Set 4</h4>
 
-<div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns52_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns52_specification-content"><p class="card-text"><p><tt>print</tt> a red snowman.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns52_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns52_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns231"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns231_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns231_specification-content"><p class="card-text"><p><tt>print</tt> a red snowman.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns231_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns231_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (above (circle 20 &quot;solid&quot; &quot;red&quot;)
               (circle 40 &quot;solid&quot; &quot;red&quot;)
@@ -242,7 +250,7 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns53_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns53_specification-content"><p class="card-text"><p><tt>print</tt> the colors of the rainbow as small squares <tt>beside</tt> each other.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns53_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns53_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns232"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns232_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns232_specification-content"><p class="card-text"><p><tt>print</tt> the colors of the rainbow as small squares <tt>beside</tt> each other.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns232_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns232_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (beside (square 40 &quot;solid&quot; &quot;red&quot;)
                (square 40 &quot;solid&quot; &quot;orange&quot;)
@@ -258,7 +266,7 @@ You can consider the below collection to be a brief excursion into that infinity
 
 
 
-<div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns54_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns54_specification-content"><p class="card-text"><p><tt>print</tt> a red snowman standing on top of the colors of the rainbow.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns54_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns54_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns233"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns233_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns233_specification-content"><p class="card-text"><p><tt>print</tt> a red snowman standing on top of the colors of the rainbow.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns233_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns233_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (above
         (above (circle 20 &quot;solid&quot; &quot;red&quot;)
@@ -275,7 +283,7 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns55_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns55_specification-content"><p class="card-text"><p>Take the last implementation and rotate it by 45 degrees.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns55_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns55_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns234"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns234_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns234_specification-content"><p class="card-text"><p>Take the last implementation and rotate it by 45 degrees.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns234_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns234_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (rotate 45
                (above
@@ -293,7 +301,7 @@ You can consider the below collection to be a brief excursion into that infinity
 //]]>
 </script>
 
-<div class="pb-4"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns56_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns56_specification-content"><p class="card-text"><p>Take the last implementation and shrink it down to half the size.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns56_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns56_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">
+<div class="pb-4" data-ns="ns235"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns235_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns235_specification-content"><p class="card-text"><p>Take the last implementation and shrink it down to half the size.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns235_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns235_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang hello/colors
 
 (print (scale 1/2
               (rotate 45
@@ -311,77 +319,75 @@ You can consider the below collection to be a brief excursion into that infinity
 
 //]]>
 </script>
-</p></div></div><div class="tab-pane fade" id="ch2"><div class="p-4"><p>Chapter 2 introduces the concept of abstraction and relates it fundamentally to the idea of Story.  The pairs below continue the meditation: What is the breadth of things that, fundamentally, can be expressed as sequences of ideas -- as Stories?</p><p>In coding, sequences are often called &quot;lists&quot;.  One of the most historically significant programming languages is Lisp -- an intellectual tradition that began in the 1950s and has been growing and evolving steadily since, influencing the design of literally all other programming languages. </p><p>The Lisp language's fundamental premise is that all codeable ideas can be written as sequences of things -- which may themselves contain sequences of other things.  The pairs below use both the arrow syntax introduced in the book and the parenthesized Lisp syntax.  The reader is encouraged to see both as semantically equivalent yet syntactically different ways of meditating on the same idea space.</p><hr /><h4>Set 0</h4><div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns57_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns57_specification-content"><p class="card-text"><p>Create a Story image that describes your life.  Put at least 3 major life Moments.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns57_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns57_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
+</p></div></div><div class="tab-pane fade" id="ch2"><div class="p-4"><p>Chapter 2 introduces the concept of abstraction and relates it fundamentally to the idea of Story.  The pairs below continue the meditation: What is the breadth of things that, fundamentally, can be expressed as sequences of ideas -- as Stories?</p><p>In coding, sequences are often called &quot;lists&quot;.  One of the most historically significant programming languages is Lisp -- an intellectual tradition that began in the 1950s and has been growing and evolving steadily since, influencing the design of literally all other programming languages. </p><p>The Lisp language's fundamental premise is that all codeable ideas can be written as sequences of things -- which may themselves contain sequences of other things.  The pairs below use both the arrow syntax introduced in the book and the parenthesized Lisp syntax.  The reader is encouraged to see both as semantically equivalent yet syntactically different ways of meditating on the same idea space.</p><hr /><h4>Set 0</h4><div class="pb-4" data-ns="ns236"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns236_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns236_specification-content"><p class="card-text"><p>Create a Story image that describes your life.  Put at least 3 major life Moments.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns236_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns236_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
 
 born-houston-1987 -&gt; moved-san-antonio-2006 -&gt; moved-san-diego-2010</code></pre></p></div></div></div><script>
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns58_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns58_specification-content"><p class="card-text"><p>Create a Story image that describes what you might have for dinner over the period of a week (7 Moments).</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns58_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns58_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
+</script><div class="pb-4" data-ns="ns237"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns237_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns237_specification-content"><p class="card-text"><p>Create a Story image that describes what you might have for dinner over the period of a week (7 Moments).</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns237_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns237_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
 
 tacos -&gt; spaghetti -&gt; pizza -&gt; burgers -&gt; sushi -&gt; leftover-sushi -&gt; icecream</code></pre></p></div></div></div><script>
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns59_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns59_specification-content"><p class="card-text"><p>Create a Story image that describes what things you do to get ready in the morning (start with get-up, end with leave-house)</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns59_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns59_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
+</script><div class="pb-4" data-ns="ns238"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns238_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns238_specification-content"><p class="card-text"><p>Create a Story image that describes what things you do to get ready in the morning (start with get-up, end with leave-house).</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns238_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns238_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
 
 get-up -&gt; brush-teeth -&gt; take-shower -&gt; make-coffee -&gt; get-breakfast -&gt; leave-house</code></pre></p></div></div></div><script>
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns60_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns60_specification-content"><p class="card-text"><p>Create a Story image that describes how people in your family greet each other after a year apart.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns60_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns60_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
+</script><div class="pb-4" data-ns="ns239"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns239_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns239_specification-content"><p class="card-text"><p>Create a Story image that describes how people in your family greet each other after a year apart.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns239_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns239_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
 
 shake-hands -&gt; hug -&gt; mention-weather -&gt; &quot;How have you been?&quot; -&gt; catch-up-over-last-year</code></pre></p></div></div></div><script>
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns61_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns61_specification-content"><p class="card-text"><p>Create a Story image that describes what goes through your mind in the moments after someone cuts you off in traffic</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns61_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns61_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
+</script><div class="pb-4" data-ns="ns240"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns240_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns240_specification-content"><p class="card-text"><p>Create a Story image that describes what goes through your mind in the moments after someone cuts you off in traffic.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns240_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns240_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
 
 fear -&gt; anger -&gt; hate -&gt; forgiveness</code></pre></p></div></div></div><script>
 //<![CDATA[
 
 //]]>
-</script><h4>Set 1</h4><div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns62_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns62_specification-content"><p class="card-text"><p>Write a Story in which <tt>meta-cat</tt> turns green and growns.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns62_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns62_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
+</script><h4>Set 1</h4><div class="pb-4" data-ns="ns241"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns241_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns241_specification-content"><p class="card-text"><p>Write a Story in which <tt>meta-cat</tt> turns green and grows.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns241_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns241_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
 
 meta-cat -&gt; greenify -&gt; grow </code></pre></p></div></div></div><script>
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns63_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns63_specification-content"><p class="card-text"><p>Try using <tt>blueify</tt> and <tt>redify</tt> on <tt>meme-teacher</tt>.  Also double the size.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns63_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns63_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
+</script><div class="pb-4" data-ns="ns242"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns242_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns242_specification-content"><p class="card-text"><p>Try using <tt>blueify</tt> and <tt>redify</tt> on <tt>meme-teacher</tt>.  Also double the size.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns242_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns242_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
 
 meme-teacher -&gt; blueify -&gt; redify -&gt; grow </code></pre></p></div></div></div><script>
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns64_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns64_specification-content"><p class="card-text"><p>Write a story in which <tt>meme-teacher</tt> grows three times and shrinks twice.  Test if the order of those operations matters.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns64_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns64_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
+</script><div class="pb-4" data-ns="ns243"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns243_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns243_specification-content"><p class="card-text"><p>Write a story in which <tt>meme-teacher</tt> grows three times and shrinks twice.  Test if the order of those operations matters.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns243_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns243_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
 
 meme-teacher -&gt; grow -&gt; shrink -&gt; grow -&gt; grow -&gt; shrink</code></pre></p></div></div></div><script>
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns65_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns65_specification-content"><p class="card-text"><p>Turn <tt>dijkstra</tt> upside down.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns65_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns65_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
+</script><div class="pb-4" data-ns="ns244"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns244_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns244_specification-content"><p class="card-text"><p>Turn <tt>dijkstra</tt> upside down.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns244_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns244_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
 
 dijkstra -&gt; rotate -&gt; rotate -&gt; rotate -&gt; rotate</code></pre></p></div></div></div><script>
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns66_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns66_specification-content"><p class="card-text"><p>How many times can you grow a <tt>meta-cat</tt> before it crashes your computer?</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns66_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns66_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
+</script><div class="pb-4" data-ns="ns245"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns245_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns245_specification-content"><p class="card-text"><p>How many times can you grow a <tt>meta-cat</tt> before it crashes your computer?</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns245_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns245_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story/cats
 
 meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow</code></pre></p></div></div></div><script>
 //<![CDATA[
 
 //]]>
-</script><h4>Set 2</h4><div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns67_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns67_specification-content"><p class="card-text"><p>Use <tt>website/bootstrap</tt> to extend <tt>dtc/story+cats</tt> so that you can launch a website with a few words of text.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns67_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns67_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
+</script><h4>Set 2</h4><div class="pb-4" data-ns="ns246"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns246_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns246_specification-content"><p class="card-text"><p>Use <tt>website/bootstrap</tt> to extend <tt>dtc/story+cats</tt> so that you can launch a website with a few words of text.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns246_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns246_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
 
-#lang dtc/story+/cats
 (require website/bootstrap)
 (preview-page &quot;This is a website&quot;)</code></pre></p></div></div></div><script>
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns68_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns68_specification-content"><p class="card-text"><p>Write a website with a header tag and a paragraph tag.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns68_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns68_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
+</script><div class="pb-4" data-ns="ns247"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns247_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns247_specification-content"><p class="card-text"><p>Write a website with an <tt>h1</tt> tag and a paragraph tag.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns247_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns247_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
 
-#lang dtc/story+/cats
 (require website/bootstrap)
 (preview-page
  (h1 &quot;This is a website&quot;)
@@ -389,7 +395,7 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns69_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns69_specification-content"><p class="card-text"><p>Write a website with a header tag, paragraph tag, and an image of a red circle.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns69_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns69_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
+</script><div class="pb-4" data-ns="ns248"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns248_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns248_specification-content"><p class="card-text"><p>Write a website with an <tt>h1</tt> tag, paragraph tag, and an image of a red circle.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns248_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns248_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
 
 (require website/bootstrap)
 (preview-page
@@ -400,7 +406,7 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns70_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns70_specification-content"><p class="card-text"><p>Use <tt>meta-engine</tt> to code an animation in which a green star spins.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns70_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns70_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
+</script><div class="pb-4" data-ns="ns249"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns249_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns249_specification-content"><p class="card-text"><p>Use <tt>meta-engine</tt> to code an animation in which a green star spins.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns249_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns249_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
 
 (require meta-engine)
 (play!
@@ -413,7 +419,7 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns71_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns71_specification-content"><p class="card-text"><p>Make an animation in which a picture of a cat and a picture of a computer scientist both spin.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns71_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns71_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
+</script><div class="pb-4" data-ns="ns250"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns250_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns250_specification-content"><p class="card-text"><p>Make an animation in which a picture of a cat and a picture of a computer scientist both spin.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns250_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns250_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
 
 (require meta-engine)
 (play!
@@ -428,7 +434,7 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns72_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns72_specification-content"><p class="card-text"><p>Make a 3d environment using <tt>3d-exploration</tt>'s preset volcano world.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns72_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns72_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
+</script><div class="pb-4" data-ns="ns251"><h5>Pair 6</h5><div class="card"><div class="card-header" onClick="$(' #ns251_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns251_specification-content"><p class="card-text"><p>Make a 3d environment using <tt>3d-exploration</tt>'s preset volcano world.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns251_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns251_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
 
 (require 3d-exploration)
 
@@ -437,7 +443,7 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><h4>Set 3</h4><div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns73_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns73_specification-content"><p class="card-text"><p>Make a 3d environment with a particle effect.  Make the particles look like Edsger Dijkstra.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns73_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns73_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
+</script><h4>Set 3</h4><div class="pb-4" data-ns="ns252"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns252_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns252_specification-content"><p class="card-text"><p>Make a 3d environment with a particle effect.  Make the particles look like Edsger Dijkstra.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns252_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns252_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
 
 (require 3d-exploration)
 
@@ -460,7 +466,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns74_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns74_specification-content"><p class="card-text"><p>Make a survival game in which one of the foods you collect looks like Edsger Dijkstra</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns74_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns74_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
+</script><div class="pb-4" data-ns="ns253"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns253_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns253_specification-content"><p class="card-text"><p>Make a survival game in which one of the foods you collect looks like Edsger Dijkstra.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns253_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns253_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
+
+(require survival)
 
 (define (my-food)
   (basic-food
@@ -483,7 +491,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns75_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns75_specification-content"><p class="card-text"><p>Make a survival game in which you collect three foods that look like differently colored Edsger Dijkstras.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns75_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns75_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
+</script><div class="pb-4" data-ns="ns254"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns254_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns254_specification-content"><p class="card-text"><p>Make a survival game in which you collect three foods that look like differently colored Edsger Dijkstras.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns254_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns254_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
+
+(require survival)
 
 (define (basic-cherry)
   (basic-food
@@ -514,7 +524,7 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns76_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns76_specification-content"><p class="card-text"><p>Make a website that displays an image of a pyramid of Edsger Dijkstras.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns76_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns76_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
+</script><div class="pb-4" data-ns="ns255"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns255_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns255_specification-content"><p class="card-text"><p>Make a website that displays an image of a pyramid of Edsger Dijkstras.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns255_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns255_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
 
 (require website/bootstrap)
 (preview-page
@@ -528,7 +538,7 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns77_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns77_specification-content"><p class="card-text"><p>Make a website with a button that, when clicked, shows a pyramid of Edsger Dijkstras.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns77_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns77_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
+</script><div class="pb-4" data-ns="ns256"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns256_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns256_specification-content"><p class="card-text"><p>Make a website with a button that, when clicked, shows a pyramid of Edsger Dijkstras.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns256_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns256_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
 
 (require website/bootstrap)
 (preview-page
@@ -544,7 +554,7 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><h4>Set 4</h4><div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns78_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns78_specification-content"><p class="card-text"><p>Make a 3D environment with a particle effect in which each particle looks like a pyramid of Edsger Dijkstras.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns78_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns78_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
+</script><h4>Set 4</h4><div class="pb-4" data-ns="ns257"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns257_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns257_specification-content"><p class="card-text"><p>Make a 3D environment with a particle effect in which each particle looks like a pyramid of Edsger Dijkstras.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns257_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns257_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
 
 (require 3d-exploration)
 
@@ -571,7 +581,7 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns79_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns79_specification-content"><p class="card-text"><p>Make a website with a button that, when clicked, shows three differently colored pyramids of Edsger Dijkstra beside each other.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns79_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns79_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
+</script><div class="pb-4" data-ns="ns258"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns258_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns258_specification-content"><p class="card-text"><p>Make a website with a button that, when clicked, shows three differently colored pyramids of Edsger Dijkstra beside each other.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns258_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns258_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/story+/cats
 
 (require website/bootstrap)
 (preview-page
@@ -596,7 +606,7 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script></div></div><div class="tab-pane fade" id="ch3"><div class="p-4"><p>The theme of Chapter 3 is nesting.  The pairs below are designed to show the breadth of things that can be expressed once you add this new dimension to your code -- sequences of ideas, any of which can themselves be sequences of ideas; Stories whose Moments can be Stories.</p><p>Unlike the random assortment of demos in the last chapter, this chapter's specification/implementation pairs will focus on the production of websites.</p><p>In the spirit of Chapter 3, we'll make a website devoted to a historic chess game of the 19th century -- between Napoleon Boneparte and the Mechanical Turk.  However, you may feel free to use different images and make a website about whatever you want.  That creative act will teach you considerably more than rotely following along with the Implementations below.</p><hr /><h4>Set 1</h4><div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns80_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns80_specification-content"><p class="card-text"><p>Make an underconstruction page that displays a move from the Napoleon/Turk game.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns80_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns80_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script></div></div><div class="tab-pane fade" id="ch3"><div class="p-4"><p>The theme of Chapter 3 is nesting.  The pairs below are designed to show the breadth of things that can be expressed once you add this new dimension to your code -- sequences of ideas, any of which can themselves be sequences of ideas; Stories whose Moments can be Stories.</p><p>Unlike the random assortment of demos in the last chapter, this chapter's specification/implementation pairs will focus on the production of websites.</p><p>In the spirit of Chapter 3, we'll make a website devoted to a historic chess game of the 19th century -- between Napoleon Boneparte and the Mechanical Turk.  However, you may feel free to use different images and make a website about whatever you want.  That creative act will teach you considerably more than rotely following along with the Implementations below.</p><hr /><h4>Set 1</h4><div class="pb-4" data-ns="ns259"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns259_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns259_specification-content"><p class="card-text"><p>Make an &quot;under construction&quot; page that displays a move from the Napoleon/Turk game.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns259_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns259_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
 
 (require website/bootstrap)
 
@@ -607,7 +617,7 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns81_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns81_specification-content"><p class="card-text"><p>Put the content into a container, so that the margins look better.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns81_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns81_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><div class="pb-4" data-ns="ns260"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns260_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns260_specification-content"><p class="card-text"><p>Put the content into a container, so that the margins look better.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns260_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns260_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
 
 (require website/bootstrap)
 
@@ -619,7 +629,7 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns82_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns82_specification-content"><p class="card-text"><p>Wrap the Napoleon/Turk image in a bootstrap card with a header that says which move is being displayed.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns82_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns82_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><div class="pb-4" data-ns="ns261"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns261_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns261_specification-content"><p class="card-text"><p>Wrap the Napoleon/Turk image in a bootstrap card with a header that says which move is being displayed.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns261_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns261_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
 
 (require website/bootstrap)
 
@@ -633,7 +643,7 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns83_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns83_specification-content"><p class="card-text"><p>Add a few more moves. (Don't add all of them, though.  In Chapter 4, we'll have linguistic tools to automate that process.  So if you add every move now, you'll be wasting your time.)</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns83_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns83_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><div class="pb-4" data-ns="ns262"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns262_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns262_specification-content"><p class="card-text"><p>Add a few more moves. (Don't add all of them, though.  In Chapter 4, we'll have linguistic tools to automate that process.  So if you add every move now, you'll be wasting your time. Also, remove the &quot;under construction&quot; text.)</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns262_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns262_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
 
 (require website/bootstrap)
 
@@ -655,7 +665,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns84_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns84_specification-content"><p class="card-text"><p>Instead of bootstrap cards, let's try a carousel.  Make a carousel that can cycle between multiple moves in the game.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns84_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns84_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><div class="pb-4" data-ns="ns263"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns263_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns263_specification-content"><p class="card-text"><p>Instead of bootstrap cards, let's try a carousel.  Make a carousel that can cycle between multiple moves in the game.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns263_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns263_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+
+(require website/bootstrap)
 
 (preview-page
  (carousel class: &quot;slide&quot;
@@ -669,7 +681,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><h4>Set 2</h4><div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns85_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns85_specification-content"><p class="card-text"><p>Put a jumbotron at the top that clarifies the story the page is telling.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns85_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns85_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><h4>Set 2</h4><div class="pb-4" data-ns="ns264"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns264_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns264_specification-content"><p class="card-text"><p>Put a jumbotron at the top that clarifies the story the page is telling.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns264_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns264_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+
+(require website/bootstrap)
 
 (preview-page
  (jumbotron
@@ -688,7 +702,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns86_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns86_specification-content"><p class="card-text"><p>Add a background image to the jumbotron and attribute where it came from if necessary.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns86_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns86_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><div class="pb-4" data-ns="ns265"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns265_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns265_specification-content"><p class="card-text"><p>Add a background image to the jumbotron and attribute where it came from if necessary.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns265_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns265_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+
+(require website/bootstrap)
 
 (preview-page
  (jumbotron style: (properties
@@ -712,8 +728,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns87_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns87_specification-content"><p class="card-text"><p>After the carousel, add the cards back (from an earlier implementation) -- so the page will have a jumbotron, a carousel, and cards.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns87_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns87_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><div class="pb-4" data-ns="ns266"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns266_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns266_specification-content"><p class="card-text"><p>After the carousel, add the cards back (from an earlier implementation) -- so the page will have a jumbotron, a carousel, and cards.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns266_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns266_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
 
+(require website/bootstrap)
 
 (preview-page
  (jumbotron style: (properties
@@ -754,9 +771,10 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><h4>Set 3</h4><div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns88_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns88_specification-content"><p class="card-text"><p>At the bottom of the page add another jumbotron, this one with an embedded video from Youtube that explains the historic game.
-   You can cut-and-paste Youtube's embed code into <tt>html/inline</tt> for now.  We can clean it up later.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns88_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns88_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><h4>Set 3</h4><div class="pb-4" data-ns="ns267"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns267_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns267_specification-content"><p class="card-text"><p>At the bottom of the page add another jumbotron, this one with an embedded video from Youtube that explains the historic game.
+   You can cut-and-paste Youtube's embed code into <tt>html/inline</tt> for now.  We can clean it up later.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns267_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns267_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
 
+(require website/bootstrap)
 
 (preview-page
  (jumbotron style: (properties
@@ -802,7 +820,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns89_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns89_specification-content"><p class="card-text"><p>Convert the HTML syntax to Lisp syntax that does the same thing.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns89_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns89_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><div class="pb-4" data-ns="ns268"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns268_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns268_specification-content"><p class="card-text"><p>Convert the HTML syntax to Lisp syntax that does the same thing.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns268_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns268_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+
+(require website/bootstrap)
 
 (preview-page
  (jumbotron style: (properties
@@ -854,7 +874,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns90_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns90_specification-content"><p class="card-text"><p>Start a new website.  Put pictures of several teachers you respect, followed by a picture of yourself.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns90_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns90_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><div class="pb-4" data-ns="ns269"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns269_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns269_specification-content"><p class="card-text"><p>Start a new website.  Put pictures of several teachers you respect, followed by a picture of yourself.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns269_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns269_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+
+(require website/bootstrap)
 
 (preview-page
  (write-img (dijkstra))
@@ -864,12 +886,14 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns91_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns91_specification-content"><p class="card-text"><p>Add a jumbotron to clarify that the intent of the page is to show gratitude for your teachers.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns91_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns91_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><div class="pb-4" data-ns="ns270"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns270_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns270_specification-content"><p class="card-text"><p>Add a jumbotron to clarify that the intent of the page is to show gratitude for your teachers.  Also put your images inside bootstrap cards to make them start to look prettier.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns270_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns270_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+
+(require website/bootstrap)
 
 (preview-page
  (jumbotron style: (properties
                     background-size: &quot;cover&quot;
-                    background-image: &quot;https://upload.wikimedia.org/wikipedia/commons/2/27/Kempelen_chess1.jpg&quot;)
+                    background-image: &quot;https://farm9.staticflickr.com/8741/17576182286_1c28051c8c_b.jpg&quot;)
             (h1 class: &quot;display-4&quot;
                 &quot;My Teachers Are Cooler Than Me&quot;)
             (p &quot;This is for them&quot;))
@@ -888,12 +912,14 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns92_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns92_specification-content"><p class="card-text"><p>Wrap each picture in a card with a header that identifies who that person is.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns92_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns92_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><div class="pb-4" data-ns="ns271"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns271_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns271_specification-content"><p class="card-text"><p>Wrap each picture in a card with a header that identifies who that person is.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns271_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns271_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+
+(require website/bootstrap)
 
 (preview-page
  (jumbotron style: (properties
                     background-size: &quot;cover&quot;
-                    background-image: &quot;https://upload.wikimedia.org/wikipedia/commons/2/27/Kempelen_chess1.jpg&quot;)
+                    background-image: &quot;https://farm9.staticflickr.com/8741/17576182286_1c28051c8c_b.jpg&quot;)
             (h1 class: &quot;display-4&quot;
                 &quot;My Teachers Are Cooler Than Me&quot;)
             (p &quot;This is for them&quot;))
@@ -916,12 +942,14 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><h4>Set 4</h4><div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns93_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns93_specification-content"><p class="card-text"><p>Make each card image be the header image for that card.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns93_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns93_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><h4>Set 4</h4><div class="pb-4" data-ns="ns272"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns272_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns272_specification-content"><p class="card-text"><p>Make each card image be the header image for that card.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns272_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns272_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+
+(require website/bootstrap)
 
 (preview-page
  (jumbotron style: (properties
                     background-size: &quot;cover&quot;
-                    background-image: &quot;https://upload.wikimedia.org/wikipedia/commons/2/27/Kempelen_chess1.jpg&quot;)
+                    background-image: &quot;https://farm9.staticflickr.com/8741/17576182286_1c28051c8c_b.jpg&quot;)
             (h1 class: &quot;display-4&quot;
                 &quot;My Teachers Are Cooler Than Me&quot;)
             (p &quot;This is for them&quot;))
@@ -948,12 +976,14 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns94_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns94_specification-content"><p class="card-text"><p>Add a button to each card with the text &quot;Learn More&quot;.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns94_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns94_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><div class="pb-4" data-ns="ns273"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns273_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns273_specification-content"><p class="card-text"><p>Add a button to each card with the text &quot;Learn More&quot;.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns273_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns273_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+
+(require website/bootstrap)
 
 (preview-page
  (jumbotron style: (properties
                     background-size: &quot;cover&quot;
-                    background-image: &quot;https://upload.wikimedia.org/wikipedia/commons/2/27/Kempelen_chess1.jpg&quot;)
+                    background-image: &quot;https://farm9.staticflickr.com/8741/17576182286_1c28051c8c_b.jpg&quot;)
             (h1 class: &quot;display-4&quot;
                 &quot;My Teachers Are Cooler Than Me&quot;)
             (p &quot;This is for them&quot;))
@@ -984,12 +1014,14 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns95_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns95_specification-content"><p class="card-text"><p>Make one of the buttons trigger the popup of a modal window with more information about the person shown in that card.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns95_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns95_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><div class="pb-4" data-ns="ns274"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns274_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns274_specification-content"><p class="card-text"><p>Make one of the buttons trigger the popup of a modal window with more information about the person shown in that card.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns274_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns274_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+
+(require website/bootstrap)
 
 (preview-page
  (jumbotron style: (properties
                     background-size: &quot;cover&quot;
-                    background-image: &quot;https://upload.wikimedia.org/wikipedia/commons/2/27/Kempelen_chess1.jpg&quot;)
+                    background-image: &quot;https://farm9.staticflickr.com/8741/17576182286_1c28051c8c_b.jpg&quot;)
             (h1 class: &quot;display-4&quot;
                 &quot;My Teachers Are Cooler Than Me&quot;)
             (p &quot;This is for them&quot;))
@@ -1002,7 +1034,7 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
                    &quot;Learn More&quot;)
    (modal id: &quot;dijkstra-modal&quot;
           (p &quot;According to Wikipedia:&quot;)
-          (p &quot;Edsger Dijkstra was a Dutch systems scientist, programmer, software engineer, science essayist,[8] and pioneer in computing science.[&quot;))))
+          (p &quot;Edsger Dijkstra was a Dutch systems scientist, programmer, software engineer, science essayist, and pioneer in computing science.&quot;))))
 
  (card
   (write-img class: &quot;card-img-top&quot; (dijkstra))
@@ -1024,12 +1056,14 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns96_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns96_specification-content"><p class="card-text"><p>Enhance the modal's layout by wrapping the content in <tt>modal-content</tt> and <tt>modal-dialog</tt>.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns96_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns96_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><div class="pb-4" data-ns="ns275"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns275_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns275_specification-content"><p class="card-text"><p>Enhance the modal's layout by wrapping the content in <tt>modal-content</tt> and <tt>modal-dialog</tt>.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns275_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns275_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+
+(require website/bootstrap)
 
 (preview-page
  (jumbotron style: (properties
                     background-size: &quot;cover&quot;
-                    background-image: &quot;https://upload.wikimedia.org/wikipedia/commons/2/27/Kempelen_chess1.jpg&quot;)
+                    background-image: &quot;https://farm9.staticflickr.com/8741/17576182286_1c28051c8c_b.jpg&quot;)
             (h1 class: &quot;display-4&quot;
                 &quot;My Teachers Are Cooler Than Me&quot;)
             (p &quot;This is for them&quot;))
@@ -1044,7 +1078,7 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
           (modal-dialog
            (modal-content
             (p &quot;According to Wikipedia:&quot;)
-            (p &quot;Edsger Dijkstra was a Dutch systems scientist, programmer, software engineer, science essayist,[8] and pioneer in computing science.[&quot;))))))
+            (p &quot;Edsger Dijkstra was a Dutch systems scientist, programmer, software engineer, science essayist, and pioneer in computing science.&quot;))))))
 
  (card
   (write-img class: &quot;card-img-top&quot; (dijkstra))
@@ -1066,12 +1100,14 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns97_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns97_specification-content"><p class="card-text"><p>Add a footer to the modal with a button that dismisses the modal.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns97_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns97_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+</script><div class="pb-4" data-ns="ns276"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns276_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns276_specification-content"><p class="card-text"><p>Add a footer to the modal with a button that dismisses the modal.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns276_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns276_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/frames/animations
+
+(require website/bootstrap)
 
 (preview-page
  (jumbotron style: (properties
                     background-size: &quot;cover&quot;
-                    background-image: &quot;https://upload.wikimedia.org/wikipedia/commons/2/27/Kempelen_chess1.jpg&quot;)
+                    background-image: &quot;https://farm9.staticflickr.com/8741/17576182286_1c28051c8c_b.jpg&quot;)
             (h1 class: &quot;display-4&quot;
                 &quot;My Teachers Are Cooler Than Me&quot;)
             (p &quot;This is for them&quot;))
@@ -1086,7 +1122,7 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
           (modal-dialog
            (modal-content
             (p &quot;According to Wikipedia:&quot;)
-            (p &quot;Edsger Dijkstra was a Dutch systems scientist, programmer, software engineer, science essayist,[8] and pioneer in computing science.[&quot;))
+            (p &quot;Edsger Dijkstra was a Dutch systems scientist, programmer, software engineer, science essayist, and pioneer in computing science.&quot;))
            (modal-footer
             (button-secondary data-dismiss: &quot;modal&quot;))))))
 
@@ -1112,7 +1148,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //]]>
 </script><p>Optionally, if you wish, you can add modal popups to the rest of the cards.</p></div></div><div class="tab-pane fade" id="ch4"><div class="p-4"><p>Chapter 4 concludes the book by defining &quot;definitions&quot;, the power of naming things.  </p><p><ul><li>Now, the deep nesting structures introduced in Chapter 3 can be flattened out, reducing cognitive load.</li>
 <li>Now, we have a way to extend programming languages with new vocabulary words and grammatical constructs -- allowing them to be extensible cognitive tools.</li>
-<li>Now, via recursion, Turing-Completeness is acheived.  We can write programs that loop forever, or ones that loop as long as necessary to complete some task.</li></ul></p><p>The text below is meant to be considered in light of Chapter 3's text.  Together, the collection of implemented specifications demonstrates the use of two different coding styles to achieve the same task -- and how Specifications can just as easily be about editing and improving existing code as they can be about writing new code.  We hope readers, after wrestling with the texts long enough to understand the code written in both styles, will think critically about the advantages and disadvantages that various styles can confer to texts written in them. </p><hr /><h4>Set 1</h4><p>In this set, we will begin by refactoring the code from Chapter 3 -- using definitions.  We'll do so one step at a time -- each implementation will change how the <i>code</i> looks, tightening it and clarifying it, without ever changing the way the website looks.  The ability to refactor code is one worth practicing from the beginning of your coding journey.  It helps your brain gain fluency over the multitude of ways that coders can express the same ideas.  Always remember: There's never &quot;One Right Way&quot; to implement something.</p><div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns98_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns98_specification-content"><p class="card-text"><p>Refactor the jumbotron from the final chess website in Chapter 3 (see above) into a definition with the name <tt>main-jumbotron</tt></p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns98_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns98_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+<li>Now, via recursion, Turing-Completeness is acheived.  We can write programs that loop forever, or ones that loop as long as necessary to complete some task.</li></ul></p><p>The text below is meant to be considered in light of Chapter 3's text.  Together, the collection of implemented specifications demonstrates the use of two different coding styles to achieve the same task -- and how Specifications can just as easily be about editing and improving existing code as they can be about writing new code.  We hope readers, after wrestling with the texts long enough to understand the code written in both styles, will think critically about the advantages and disadvantages that various styles can confer to texts written in them. </p><hr /><h4>Set 1</h4><p>In this set, we will begin by refactoring the code from Chapter 3 -- using definitions.  We'll do so one step at a time -- each implementation will change how the <i>code</i> looks, tightening it and clarifying it, without ever changing the way the website looks.  The ability to refactor code is one worth practicing from the beginning of your coding journey.  It helps your brain gain fluency over the multitude of ways that coders can express the same ideas.  Always remember: There's never &quot;One Right Way&quot; to implement something.</p><div class="pb-4" data-ns="ns277"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns277_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns277_specification-content"><p class="card-text"><p>Refactor the jumbotron from the final chess website in Chapter 3 (see above) into a definition with the name <tt>main-jumbotron</tt></p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns277_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns277_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+
+(require website/bootstrap)
 
 (define (main-jumbotron)
   (jumbotron style: (properties
@@ -1166,7 +1204,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns99_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns99_specification-content"><p class="card-text"><p>Refactor the move carousel into its own definition called <tt>move-carousel</tt>.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns99_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns99_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><div class="pb-4" data-ns="ns278"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns278_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns278_specification-content"><p class="card-text"><p>Refactor the carousel of chess moves into its own definition called <tt>move-carousel</tt>.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns278_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns278_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+
+(require website/bootstrap)
 
 (define (main-jumbotron)
   (list
@@ -1223,7 +1263,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns100_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns100_specification-content"><p class="card-text"><p>Refactor the cards that display moves into its own definition called <tt>move-cards</tt>.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns100_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns100_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><div class="pb-4" data-ns="ns279"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns279_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns279_specification-content"><p class="card-text"><p>Refactor the cards that display moves into its own definition called <tt>move-cards</tt>.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns279_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns279_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+
+(require website/bootstrap)
 
 (define (main-jumbotron)
   (list
@@ -1284,7 +1326,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns101_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns101_specification-content"><p class="card-text"><p>Refactor the youtube video jumbotron into its own definition called <tt>youtube</tt>.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns101_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns101_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><div class="pb-4" data-ns="ns280"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns280_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns280_specification-content"><p class="card-text"><p>Refactor the YouTube video jumbotron into its own definition called <tt>youtube</tt>.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns280_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns280_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+
+(require website/bootstrap)
 
 (define (main-jumbotron)
   (list
@@ -1346,7 +1390,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><h4>Set 2</h4><div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns102_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns102_specification-content"><p class="card-text"><p>Refactor the carousel items from <tt>move-carousel</tt> into a definition called <tt>move-carousel-item</tt>.  It should take a parameter that it uses inside <tt>napoleon/turk</tt> to pick which move to display.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns102_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns102_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><h4>Set 2</h4><div class="pb-4" data-ns="ns281"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns281_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns281_specification-content"><p class="card-text"><p>Refactor the carousel items from <tt>move-carousel</tt> into a definition called <tt>move-carousel-item</tt>.  It should take a parameter that it uses inside <tt>napoleon/turk</tt> to pick which move to display.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns281_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns281_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+
+(require website/bootstrap)
 
 (define (main-jumbotron)
   (list
@@ -1408,7 +1454,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns103_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns103_specification-content"><p class="card-text"><p>Instead of explicitly calling <tt>move-carousel-item</tt> three times in <tt>move-carousel</tt>, use <tt>map</tt> and <tt>range</tt> to call <tt>move-carousel-item</tt> on each of the numbers from 1 to 10</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns103_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns103_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><div class="pb-4" data-ns="ns282"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns282_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns282_specification-content"><p class="card-text"><p>Instead of explicitly calling <tt>move-carousel-item</tt> three times in <tt>move-carousel</tt>, use <tt>map</tt> and <tt>range</tt> to call <tt>move-carousel-item</tt> on each of the numbers from 1 to 10</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns282_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns282_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+
+(require website/bootstrap)
 
 (define (main-jumbotron)
   (list
@@ -1469,7 +1517,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns104_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns104_specification-content"><p class="card-text"><p>For each of the cards in <tt>move-cards</tt>, refactor those in the same way as you did <tt>move-carousel-item</tt> -- that is, make a new definition called <tt>move-card</tt>, and use that one three times in <tt>move-cards</tt>.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns104_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns104_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><div class="pb-4" data-ns="ns283"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns283_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns283_specification-content"><p class="card-text"><p>For each of the cards in <tt>move-cards</tt>, refactor those in the same way as you did <tt>move-carousel-item</tt> -- that is, make a new definition called <tt>move-card</tt>, and use that one three times in <tt>move-cards</tt>.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns283_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns283_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+
+(require website/bootstrap)
 
 (define (main-jumbotron)
   (list
@@ -1529,8 +1579,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns105_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns105_specification-content"><p class="card-text"><p>Use <tt>map</tt> and <tt>range</tt> to call <tt>move-card</tt> ten times in <tt>move-cards</tt> instead of just three.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns105_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns105_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><div class="pb-4" data-ns="ns284"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns284_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns284_specification-content"><p class="card-text"><p>Use <tt>map</tt> and <tt>range</tt> to call <tt>move-card</tt> ten times in <tt>move-cards</tt> instead of just three.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns284_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns284_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
 
+(require website/bootstrap)
 
 (define (main-jumbotron)
   (list
@@ -1588,7 +1639,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns106_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns106_specification-content"><p class="card-text"><p>Create a definition called <tt>youtube-video</tt> that encapsulates the part of the <tt>youtube</tt> jumbotron that displays a youtube video.  Use <tt>youtube-video</tt> inside <tt>youtube</tt>, and while you're at it, add a few more youtube videos to the jumbotron, now that it's easy. </p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns106_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns106_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><div class="pb-4" data-ns="ns285"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns285_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns285_specification-content"><p class="card-text"><p>Create a definition called <tt>youtube-video</tt> that encapsulates the part of the <tt>youtube</tt> jumbotron that displays a YouTube video.  Use <tt>youtube-video</tt> inside <tt>youtube</tt>, and while you're at it, add a few more YouTube videos to the jumbotron, now that it's easy. </p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns285_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns285_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+
+(require website/bootstrap)
 
 (define (main-jumbotron)
   (list
@@ -1652,7 +1705,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><h4>Set 3</h4><div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns107_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns107_specification-content"><p class="card-text"><p>Now let's begin to make a second page for a different chess match and see if our code is flexible enough yet.  Duplicate the <tt>napoleon/turk-page</tt> definition to make a new one called <tt>kasparov/deep-blue-page</tt>, use <tt>preview-pages</tt> to preview them both together as part of a two-page website.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns107_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns107_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><h4>Set 3</h4><div class="pb-4" data-ns="ns286"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns286_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns286_specification-content"><p class="card-text"><p>Now let's begin to make a second page for a different chess match and see if our code is flexible enough yet.  Create a <tt>napoleon/turk-page</tt> definition and duplicate it.  Call the duplicate <tt>kasparov/deep-blue-page</tt>.  Use <tt>preview-pages</tt> to preview them both together as part of a two-page website.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns286_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns286_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+
+(require website/bootstrap)
 
 (define (main-jumbotron)
   (list
@@ -1726,7 +1781,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns108_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns108_specification-content"><p class="card-text"><p>Both pages have the same background image, which won't do.  Enhance the <tt>main-jumbotron</tt> definition so that it can display a different background image on each page.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns108_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns108_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><div class="pb-4" data-ns="ns287"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns287_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns287_specification-content"><p class="card-text"><p>Both pages have the same background image, which won't do.  Enhance the <tt>main-jumbotron</tt> definition so that it can display a different background image on each page.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns287_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns287_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+
+(require website/bootstrap)
 
 ;Note from the implementor:
 ;  I used a #:background-image keyword parameter here to illustrate another way of writing a definition.
@@ -1805,7 +1862,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns109_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns109_specification-content"><p class="card-text"><p>Add additional flexibility to your <tt>main-jumbotron</tt> so that the title, subtitle, and attribution text can all be specified differently on each page.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns109_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns109_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><div class="pb-4" data-ns="ns288"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns288_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns288_specification-content"><p class="card-text"><p>Add additional flexibility to your <tt>main-jumbotron</tt> so that the title, subtitle, and attribution text can all be specified differently on each page.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns288_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns288_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+
+(require website/bootstrap)
 
 (define (main-jumbotron #:background-image background-image
                         #:title title
@@ -1890,8 +1949,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns110_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns110_specification-content"><p class="card-text"><p>Now the main issue is simply that each page displays the moves from only one game.  Add flexibility to <tt>move-carousel</tt>, <tt>move-carousel-item</tt>, <tt>move-cards</tt>, and <tt>move-card</tt>.  Use the flexibility to display a different game's moves on each page.  (NOTE: <tt>kasparov/deep-blue</tt> is the name of the vocabulary word that provides moves for the Kasparov game.)  Also, experiment to find out how many moves are in each game -- and display all of them.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns110_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns110_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><div class="pb-4" data-ns="ns289"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns289_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns289_specification-content"><p class="card-text"><p>Now the main issue is simply that each page displays the moves from only one game.  Add flexibility to <tt>move-carousel</tt>, <tt>move-carousel-item</tt>, <tt>move-cards</tt>, and <tt>move-card</tt>.  Use the flexibility to display a different game's moves on each page.  (NOTE: <tt>kasparov/deep-blue</tt> is the name of the vocabulary word that provides moves for the Kasparov game.)  Also, experiment to find out how many moves are in each game -- and display all of them.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns289_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns289_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
 
+(require website/bootstrap)
 
 (define (main-jumbotron #:background-image background-image
                         #:title title
@@ -1978,7 +2038,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns111_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns111_specification-content"><p class="card-text"><p>Finally, make the <tt>youtube</tt> definition more flexible -- so that different videos can be displayed on each page.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns111_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns111_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><div class="pb-4" data-ns="ns290"><h5>Pair 5</h5><div class="card"><div class="card-header" onClick="$(' #ns290_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns290_specification-content"><p class="card-text"><p>Finally, make the <tt>youtube</tt> definition more flexible -- so that different videos can be displayed on each page.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns290_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns290_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+
+(require website/bootstrap)
 
 (define (main-jumbotron #:background-image background-image
                         #:title title
@@ -2029,6 +2091,8 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
    allow: &quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot;
    allowfullscreen: #t))
 
+;Note from the implementor:
+;  I used what's called a &quot;rest&quot; parameter here.  I'm naming it so that readers can look up the concept if they wish.
 (define (youtube . ids)
   (jumbotron
    (h1 class: &quot;display-4&quot; &quot;Everyone is talking about it&quot;)
@@ -2067,10 +2131,10 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><h4>Set 4</h4><p>In the Chapter 3 problem set, we created a website -- sort of an interactive essay about a historic chess match.  In the pairs above, we refactored that code so that the definitions were flexible enough to tell two different stories with the same framework: the Napoleon game and the Kasparov game.</p><p>Now, we'll create a small blog website from scratch, but using flexible definitions from the get-go.</p><div class="pb-4"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns112_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns112_specification-content"><p class="card-text"><p>Make a blog with one post.  Make a definition for <tt>post</tt> that can be reused for many different posts.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns112_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns112_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><h4>Set 4</h4><p>In the Chapter 3 problem set, we created a website -- sort of an interactive essay about a historic chess match.  In the pairs above, we refactored that code so that the definitions were flexible enough to tell two different stories with the same framework: the Napoleon game and the Kasparov game.</p><p>Now, we'll create a small blog website from scratch, but using flexible definitions from the get-go.</p><div class="pb-4" data-ns="ns291"><h5>Pair 1</h5><div class="card"><div class="card-header" onClick="$(' #ns291_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns291_specification-content"><p class="card-text"><p>Make a blog with one post.  Make a definition for <tt>post</tt> that can be reused for many different posts.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns291_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns291_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
 
-;Note from the implementor:
-;  I used what's called a &quot;rest&quot; parameter here.  I'm naming it so that readers can look up the concept if they wish.
+(require website/bootstrap)
+
 (define (post title . content)
   (list
    (jumbotron
@@ -2090,7 +2154,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns113_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns113_specification-content"><p class="card-text"><p>Add a second post, using <tt>post</tt>, about how you made the first post.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns113_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns113_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><div class="pb-4" data-ns="ns292"><h5>Pair 2</h5><div class="card"><div class="card-header" onClick="$(' #ns292_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns292_specification-content"><p class="card-text"><p>Add a second post, using <tt>post</tt>, about how you made the first post.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns292_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns292_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+
+(require website/bootstrap)
 
 (define (post title . content)
   (list
@@ -2120,7 +2186,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns114_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns114_specification-content"><p class="card-text"><p>Add a third post, using <tt>post</tt> again.  Use this post to remind you about the code to make a bootstrap card.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns114_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns114_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><div class="pb-4" data-ns="ns293"><h5>Pair 3</h5><div class="card"><div class="card-header" onClick="$(' #ns293_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns293_specification-content"><p class="card-text"><p>Add a third post, using <tt>post</tt> again.  Use this post to remind you about the code to make a bootstrap card.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns293_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns293_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+
+(require website/bootstrap)
 
 (define (post title . content)
   (list
@@ -2160,7 +2228,9 @@ meta-cat -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt; grow -&gt;
 //<![CDATA[
 
 //]]>
-</script><div class="pb-4"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns115_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns115_specification-content"><p class="card-text"><p>Add another post, using <tt>post</tt>.  Also, change how all of your posts look by changing the <tt>post</tt> definition.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns115_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns115_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+</script><div class="pb-4" data-ns="ns294"><h5>Pair 4</h5><div class="card"><div class="card-header" onClick="$(' #ns294_specification-content ').toggle()"><button type="button" class="btn btn-link">Specification (Click to Toggle)</button></div><div class="card-body" id="ns294_specification-content"><p class="card-text"><p>Add another post, using <tt>post</tt>.  Also, change how all of your posts look by changing the <tt>post</tt> definition.</p></p></div></div><div class="card"><div class="card-header" onClick="$(' #ns294_implementation-content ').toggle()"><button type="button" class="btn btn-link">Implementation (Click to Toggle)</button></div><div class="card-body" id="ns294_implementation-content" style="display:none;"><p class="card-text"><pre><code class="lang-scheme">#lang dtc/complete
+
+(require website/bootstrap)
 
 (define (post title . content)
   (card
@@ -2224,4 +2294,4 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 //]]>
-</script><script src="/js/font-awesome.js"></script></body></html>
+</script></body></html>
