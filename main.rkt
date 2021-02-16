@@ -21,7 +21,7 @@
   (response/html (companion-site-index)))
 
 (define (forum-redirect r)
-  (redirect-to "http://forum.dont-teach.com"))
+  (redirect-to "https://www.facebook.com/groups/644439413085338/"))
 
 (define (home-page r)
   (response/html
