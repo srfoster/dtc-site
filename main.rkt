@@ -27,8 +27,10 @@
 
 (define (home-page r)
   (response/html
-    (home-page-index)
-    ))
+    (home-page-index)))
+
+(define (docs-redirect r)
+  (redirect-to "/doc/dtc/"))
 
 (define (server)
   (define-values (mailing-list-dispatch mailing-list-url)
@@ -36,6 +38,10 @@
       [("") home-page]
       [("coding" "") home-page]
       [("coding") home-page]
+      [("coding" "docs") docs-redirect]
+      [("coding" "doc") docs-redirect]
+      [("docs") docs-redirect]
+      [("doc") docs-redirect]
       [("coding" "practice") coding-practice]
       [("coding" "forum") forum-redirect]
       [("coding" "forums") forum-redirect]
